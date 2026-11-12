@@ -1,0 +1,14 @@
+6 runs planned, 42 already finished
+[1/6] cnn_global_clean_seed0
+    cnn_global_clean_seed0: best val F1 0.710 at epoch 55 (21.5 min)
+[2/6] cnn_global_clean_seed1
+    cnn_global_clean_seed1: best val F1 0.709 at epoch 53 (21.4 min)
+[3/6] cnn_global_clean_seed2
+    cnn_global_clean_seed2: best val F1 0.709 at epoch 49 (21.4 min)
+[4/6] cnn_global_all_seed0
+    cnn_global_all_seed0: best val F1 0.720 at epoch 12 (33.0 min)
+[5/6] cnn_global_all_seed1
+    cnn_global_all_seed1: best val F1 0.744 at epoch 12 (33.4 min)
+[6/6] cnn_global_all_seed2
+    cnn_global_all_seed2: best val F1 0.758 at epoch 12 (33.3 min)
+All runs finished

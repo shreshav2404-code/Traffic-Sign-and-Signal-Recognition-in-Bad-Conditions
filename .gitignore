@@ -1,0 +1,11 @@
+# Datasets, packed arrays and YOLO frames: about 150 GB. See "Datasets" in README.md.
+data/
+
+# Python environment and caches
+.venv/
+__pycache__/
+*.pyc
+
+# Office lock files and local editor settings
+~$*
+.claude/

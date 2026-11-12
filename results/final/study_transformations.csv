@@ -1,0 +1,9 @@
+operation,brightness,contrast,ms_per_image
+Original,0.43,0.382,0.0
+Negative,0.57,0.382,0.002
+Gamma 0.5,0.62,0.296,0.09
+Histogram equalization,0.478,0.562,0.014
+CLAHE,0.459,0.453,0.047
+Contrast stretch,0.434,0.504,0.055
+Gaussian kernel,0.43,0.36,0.235
+Sharpen kernel,0.428,0.467,0.241

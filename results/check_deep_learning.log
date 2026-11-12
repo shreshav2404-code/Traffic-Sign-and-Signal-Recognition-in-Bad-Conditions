@@ -1,0 +1,109 @@
+ok  real_train: no base image on both sides 
+ok  real_train: every sign has validation images 
+ok  real_train: gap separates the sets 15.1% validation, 4.9% gap
+ok  real_train: sign 0 block is after training 869 < 924
+ok  real_train: sign 1 block is after training 232 < 247
+ok  real_train: sign 2 block is after training 68 < 73
+ok  real_train: sign 3 block is after training 30 < 33
+ok  real_train: sign 4 block is after training 645 < 686
+ok  real_train: sign 5 block is after training 71 < 76
+ok  real_train: sign 6 block is after training 873 < 928
+ok  real_train: sign 7 block is after training 165 < 176
+ok  real_train: sign 8 block is after training 83 < 89
+ok  real_train: sign 9 block is after training 155 < 165
+ok  real_train: sign 10 block is after training 64 < 69
+ok  real_train: sign 11 block is after training 93 < 99
+ok  real_train: sign 12 block is after training 501 < 533
+ok  real_train: sign 13 block is after training 1984 < 2109
+ok  unreal_train: no base image on both sides 
+ok  unreal_train: every sign has validation images 
+ok  unreal_train: gap separates the sets 15.0% validation, 5.0% gap
+ok  unreal_train: sign 0 block is after training 1563 < 1661
+ok  unreal_train: sign 1 block is after training 1464 < 1556
+ok  unreal_train: sign 2 block is after training 1392 < 1479
+ok  unreal_train: sign 3 block is after training 768 < 817
+ok  unreal_train: sign 4 block is after training 1493 < 1587
+ok  unreal_train: sign 5 block is after training 1758 < 1868
+ok  unreal_train: sign 6 block is after training 597 < 635
+ok  unreal_train: sign 7 block is after training 1424 < 1513
+ok  unreal_train: sign 8 block is after training 677 < 720
+ok  unreal_train: sign 9 block is after training 834 < 887
+ok  unreal_train: sign 10 block is after training 825 < 877
+ok  unreal_train: sign 11 block is after training 661 < 703
+ok  unreal_train: sign 12 block is after training 1044 < 1110
+ok  unreal_train: sign 13 block is after training 1188 < 1263
+ok  no LISA clip is in two splits 
+ok  LISA test uses only the official sequences 
+ok  lisa_train holds all three light colours 
+ok  lisa_train holds day and night 
+ok  lisa_val holds all three light colours 
+ok  lisa_val holds day and night 
+ok  lisa_test holds all three light colours 
+ok  lisa_test holds day and night 
+ok  lights join training 
+ok  lights join validation 
+ok  clean regime has clean lights only 
+ok  17-class CNN outputs 17 classes 
+ok  clean regime holds only clean images 
+ok  validation holds real damaged images 
+    clean training 21,521, validation 67,033
+ok  rarest sign gets the largest weight 
+ok  images are scaled around zero 
+ok  images are channels first 
+ok  augmentation keeps the shape 
+ok  augmentation changes images 
+ok  mlp outputs 14 classes 
+    mlp: 1,708,302 weights
+ok  cnn outputs 14 classes 
+    cnn: 815,598 weights
+ok  feature MLP outputs 14 classes 
+ok  CNN can memorize 256 images 1.000
+ok  accuracy formula 
+ok  macro F1 formula 
+ok  wide names are unique 84
+ok  first 17 wide classes keep their places 
+ok  every GTSRB class has a wide label 
+ok  all 85 Indian folders are mapped or skipped 
+ok  every wide class has a source 
+ok  GTSRB stop, yield and no entry merge with CURE-TSR 
+ok  Indian give way and stop merge with CURE-TSR 
+ok  gtsrb test classes were all trained on 
+ok  gtsrb labels are wide labels 
+ok  indian test classes were all trained on 
+ok  indian labels are wide labels 
+ok  GTSRB validation keeps all 20 damage types 
+ok  GTSRB training has 4 damaged copies per image 
+ok  wide training covers all 84 classes 
+ok  wide clean regime holds only clean images 
+ok  wide CNN outputs 84 classes 
+ok  global names are unique 106
+ok  first 84 global classes keep their places 
+ok  every Mapillary meaning names a global class 
+ok  Mapillary variants share a class 
+ok  Mapillary speed limits merge into one class 
+ok  blue square pedestrian crossings join the class 
+ok  plates under signs are left out 
+ok  rare named signs become other sign 
+ok  Mapillary test classes were all trained on 
+ok  Mapillary labels are global labels 
+ok  global training covers all 106 classes 
+ok  global CNN outputs 106 classes 
+ok  YOLO finds at least half the lights in 30 unseen lisa frames 45/65
+ok  YOLO boxes stay inside the lisa frames 
+ok  YOLO finds at least half the signs in 30 unseen mtsd frames 125/153
+ok  YOLO boxes stay inside the mtsd frames 
+ok  a light can only be named as a light 
+ok  a sign keeps its best sign 
+ok  a sign can't be named as a light 
+ok  a sign scored 0 everywhere still gets a sign 
+ok  worn copies keep their size and type 
+ok  more wear takes more red off the sign [98, 72, 58, 47, 32]
+ok  black lettering stays dark 
+ok  the corners around the sign stay as they were 
+ok  every clean validation sign has all 5 worn levels 
+ok  worn copies are marked as worn paint 
+ok  worn copies keep CURE-TSR's validation block 
+ok  damaged photos only name stop, give way and no entry 
+ok  every damaged split has all three signs 
+
+All 104 checks passed.

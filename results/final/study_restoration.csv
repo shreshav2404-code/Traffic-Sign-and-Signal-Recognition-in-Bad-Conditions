@@ -1,0 +1,37 @@
+damage,filter,mse,psnr,ssim,ms_per_image
+"Gaussian noise, sigma 10",No filter,97.7,28.24,0.879,0.0
+"Gaussian noise, sigma 10",Mean,132.8,30.38,0.933,0.007
+"Gaussian noise, sigma 10",Gaussian,87.7,31.45,0.949,0.015
+"Gaussian noise, sigma 10",Median,89.7,30.51,0.934,0.004
+"Gaussian noise, sigma 10",Bilateral,35.8,33.04,0.965,0.018
+"Gaussian noise, sigma 10",Non-local means,89.4,29.42,0.918,1.41
+"Gaussian noise, sigma 25",No filter,579.1,20.51,0.642,0.0
+"Gaussian noise, sigma 25",Mean,198.8,26.55,0.864,0.004
+"Gaussian noise, sigma 25",Gaussian,165.6,26.74,0.866,0.01
+"Gaussian noise, sigma 25",Median,200.3,25.67,0.834,0.003
+"Gaussian noise, sigma 25",Bilateral,253.8,24.12,0.783,0.014
+"Gaussian noise, sigma 25",Non-local means,183.7,25.85,0.835,1.391
+"Gaussian noise, sigma 50",No filter,2048.8,15.03,0.404,0.0
+"Gaussian noise, sigma 50",Mean,418.4,22.34,0.725,0.004
+"Gaussian noise, sigma 50",Gaussian,421.4,22.08,0.711,0.01
+"Gaussian noise, sigma 50",Median,538.9,20.95,0.664,0.003
+"Gaussian noise, sigma 50",Bilateral,1649.0,15.98,0.445,0.014
+"Gaussian noise, sigma 50",Non-local means,1242.6,17.33,0.526,1.388
+"Salt and pepper, 2%",No filter,412.5,22.16,0.797,0.0
+"Salt and pepper, 2%",Mean,176.0,27.6,0.893,0.004
+"Salt and pepper, 2%",Gaussian,138.9,27.97,0.903,0.013
+"Salt and pepper, 2%",Median,66.4,34.83,0.968,0.003
+"Salt and pepper, 2%",Bilateral,425.3,22.03,0.783,0.015
+"Salt and pepper, 2%",Non-local means,403.4,22.36,0.768,1.415
+"Salt and pepper, 5%",No filter,1046.2,18.02,0.607,0.0
+"Salt and pepper, 5%",Mean,269.5,24.79,0.821,0.004
+"Salt and pepper, 5%",Gaussian,247.6,24.75,0.82,0.01
+"Salt and pepper, 5%",Median,78.8,33.58,0.964,0.003
+"Salt and pepper, 5%",Bilateral,1053.5,17.99,0.594,0.014
+"Salt and pepper, 5%",Non-local means,929.3,18.62,0.605,1.397
+"Salt and pepper, 10%",No filter,2082.0,14.99,0.438,0.0
+"Salt and pepper, 10%",Mean,434.6,22.26,0.732,0.004
+"Salt and pepper, 10%",Gaussian,438.4,22.01,0.72,0.01
+"Salt and pepper, 10%",Median,107.1,31.48,0.955,0.003
+"Salt and pepper, 10%",Bilateral,2081.7,14.99,0.427,0.014
+"Salt and pepper, 10%",Non-local means,1845.5,15.57,0.445,1.397

@@ -1,0 +1,11 @@
+Using 22 workers
+real_train_wear: 14,584 images in 4s
+unreal_train_wear: 39,220 images in 2s
+real_test_wear: 16,670 images in 1s
+unreal_test_wear: 41,050 images in 2s
+gtsrb_val_wear: 29,400 images in 2s
+gtsrb_test_wear: 63,150 images in 2s
+indian_val_wear: 3,020 images in 0s
+indian_test_wear: 2,240 images in 0s
+mapillary_val_wear: 32,135 images in 2s
+mapillary_test_wear: 30,980 images in 2s

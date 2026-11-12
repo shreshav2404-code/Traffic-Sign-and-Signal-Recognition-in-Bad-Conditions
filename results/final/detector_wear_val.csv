@@ -1,0 +1,5 @@
+dataset,class,frames,precision,recall,map50,map50_95
+LISA,light,2018,0.81,0.736,0.777,0.358
+Mapillary,sign,5361,0.84,0.596,0.701,0.479
+Kaggle damaged signs,sign,460,0.899,0.785,0.884,0.648
+Roboflow damaged signs,sign,399,0.842,0.863,0.892,0.48

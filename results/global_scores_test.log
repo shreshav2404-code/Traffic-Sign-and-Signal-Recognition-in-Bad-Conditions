@@ -1,0 +1,101 @@
+D:\mini_project\deep_learning\data.py:108: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\torch\csrc\utils\tensor_numpy.cpp:214.)
+  tensor = torch.from_numpy(inputs).to(device)
+cnn_global_clean_seed0 original signs_real       accuracy 0.703  F1 0.700
+cnn_global_clean_seed0 original signs_simulated  accuracy 0.731  F1 0.763
+cnn_global_clean_seed0 original lights           accuracy 0.764  F1 0.835
+cnn_global_clean_seed0 original gtsrb            accuracy 0.808  F1 0.821
+cnn_global_clean_seed0 original indian           accuracy 0.769  F1 0.755
+cnn_global_clean_seed0 original mapillary        accuracy 0.786  F1 0.755
+cnn_global_clean_seed0 fuzzy    signs_real       accuracy 0.739  F1 0.742
+cnn_global_clean_seed0 fuzzy    signs_simulated  accuracy 0.769  F1 0.797
+cnn_global_clean_seed0 fuzzy    lights           accuracy 0.910  F1 0.933
+cnn_global_clean_seed0 fuzzy    gtsrb            accuracy 0.883  F1 0.893
+cnn_global_clean_seed0 fuzzy    indian           accuracy 0.768  F1 0.748
+cnn_global_clean_seed0 fuzzy    mapillary        accuracy 0.845  F1 0.815
+cnn_global_clean_seed1 original signs_real       accuracy 0.718  F1 0.729
+cnn_global_clean_seed1 original signs_simulated  accuracy 0.737  F1 0.773
+cnn_global_clean_seed1 original lights           accuracy 0.790  F1 0.864
+cnn_global_clean_seed1 original gtsrb            accuracy 0.788  F1 0.819
+cnn_global_clean_seed1 original indian           accuracy 0.746  F1 0.732
+cnn_global_clean_seed1 original mapillary        accuracy 0.783  F1 0.757
+cnn_global_clean_seed1 fuzzy    signs_real       accuracy 0.747  F1 0.752
+cnn_global_clean_seed1 fuzzy    signs_simulated  accuracy 0.771  F1 0.803
+cnn_global_clean_seed1 fuzzy    lights           accuracy 0.937  F1 0.955
+cnn_global_clean_seed1 fuzzy    gtsrb            accuracy 0.887  F1 0.894
+cnn_global_clean_seed1 fuzzy    indian           accuracy 0.769  F1 0.742
+cnn_global_clean_seed1 fuzzy    mapillary        accuracy 0.849  F1 0.824
+cnn_global_clean_seed2 original signs_real       accuracy 0.709  F1 0.710
+cnn_global_clean_seed2 original signs_simulated  accuracy 0.744  F1 0.770
+cnn_global_clean_seed2 original lights           accuracy 0.771  F1 0.819
+cnn_global_clean_seed2 original gtsrb            accuracy 0.787  F1 0.823
+cnn_global_clean_seed2 original indian           accuracy 0.744  F1 0.737
+cnn_global_clean_seed2 original mapillary        accuracy 0.769  F1 0.737
+cnn_global_clean_seed2 fuzzy    signs_real       accuracy 0.741  F1 0.740
+cnn_global_clean_seed2 fuzzy    signs_simulated  accuracy 0.774  F1 0.802
+cnn_global_clean_seed2 fuzzy    lights           accuracy 0.923  F1 0.936
+cnn_global_clean_seed2 fuzzy    gtsrb            accuracy 0.880  F1 0.891
+cnn_global_clean_seed2 fuzzy    indian           accuracy 0.755  F1 0.735
+cnn_global_clean_seed2 fuzzy    mapillary        accuracy 0.840  F1 0.807
+cnn_global_all_seed0 original signs_real       accuracy 0.841  F1 0.815
+cnn_global_all_seed0 original signs_simulated  accuracy 0.896  F1 0.887
+cnn_global_all_seed0 original lights           accuracy 0.943  F1 0.954
+cnn_global_all_seed0 original gtsrb            accuracy 0.938  F1 0.939
+cnn_global_all_seed0 original indian           accuracy 0.756  F1 0.712
+cnn_global_all_seed0 original mapillary        accuracy 0.824  F1 0.784
+cnn_global_all_seed0 fuzzy    signs_real       accuracy 0.833  F1 0.801
+cnn_global_all_seed0 fuzzy    signs_simulated  accuracy 0.879  F1 0.870
+cnn_global_all_seed0 fuzzy    lights           accuracy 0.947  F1 0.956
+cnn_global_all_seed0 fuzzy    gtsrb            accuracy 0.933  F1 0.942
+cnn_global_all_seed0 fuzzy    indian           accuracy 0.748  F1 0.701
+cnn_global_all_seed0 fuzzy    mapillary        accuracy 0.827  F1 0.792
+cnn_global_all_seed1 original signs_real       accuracy 0.852  F1 0.817
+cnn_global_all_seed1 original signs_simulated  accuracy 0.901  F1 0.890
+cnn_global_all_seed1 original lights           accuracy 0.945  F1 0.947
+cnn_global_all_seed1 original gtsrb            accuracy 0.941  F1 0.940
+cnn_global_all_seed1 original indian           accuracy 0.762  F1 0.728
+cnn_global_all_seed1 original mapillary        accuracy 0.840  F1 0.800
+cnn_global_all_seed1 fuzzy    signs_real       accuracy 0.840  F1 0.800
+cnn_global_all_seed1 fuzzy    signs_simulated  accuracy 0.880  F1 0.869
+cnn_global_all_seed1 fuzzy    lights           accuracy 0.942  F1 0.951
+cnn_global_all_seed1 fuzzy    gtsrb            accuracy 0.930  F1 0.940
+cnn_global_all_seed1 fuzzy    indian           accuracy 0.749  F1 0.711
+cnn_global_all_seed1 fuzzy    mapillary        accuracy 0.840  F1 0.805
+cnn_global_all_seed2 original signs_real       accuracy 0.842  F1 0.815
+cnn_global_all_seed2 original signs_simulated  accuracy 0.898  F1 0.887
+cnn_global_all_seed2 original lights           accuracy 0.946  F1 0.953
+cnn_global_all_seed2 original gtsrb            accuracy 0.940  F1 0.941
+cnn_global_all_seed2 original indian           accuracy 0.750  F1 0.716
+cnn_global_all_seed2 original mapillary        accuracy 0.842  F1 0.807
+cnn_global_all_seed2 fuzzy    signs_real       accuracy 0.833  F1 0.804
+cnn_global_all_seed2 fuzzy    signs_simulated  accuracy 0.883  F1 0.870
+cnn_global_all_seed2 fuzzy    lights           accuracy 0.945  F1 0.955
+cnn_global_all_seed2 fuzzy    gtsrb            accuracy 0.932  F1 0.943
+cnn_global_all_seed2 fuzzy    indian           accuracy 0.738  F1 0.703
+cnn_global_all_seed2 fuzzy    mapillary        accuracy 0.842  F1 0.810
+
+                                     accuracy_mean  accuracy_std  f1_mean  f1_std
+trained_on input    group                                                        
+clean      original signs_real               0.710         0.007    0.713   0.015
+                    signs_simulated          0.737         0.006    0.769   0.005
+                    lights                   0.775         0.013    0.839   0.023
+                    gtsrb                    0.794         0.012    0.821   0.002
+                    indian                   0.753         0.014    0.742   0.012
+                    mapillary                0.779         0.009    0.750   0.011
+           fuzzy    signs_real               0.742         0.004    0.745   0.007
+                    signs_simulated          0.771         0.002    0.800   0.003
+                    lights                   0.923         0.013    0.941   0.012
+                    gtsrb                    0.883         0.004    0.893   0.002
+                    indian                   0.764         0.008    0.742   0.006
+                    mapillary                0.845         0.005    0.815   0.008
+all        original signs_real               0.845         0.006    0.816   0.001
+                    signs_simulated          0.898         0.002    0.888   0.002
+                    lights                   0.945         0.001    0.951   0.004
+                    gtsrb                    0.940         0.002    0.940   0.001
+                    indian                   0.756         0.006    0.719   0.008
+                    mapillary                0.836         0.010    0.797   0.012
+           fuzzy    signs_real               0.835         0.004    0.802   0.002
+                    signs_simulated          0.881         0.002    0.870   0.001
+                    lights                   0.945         0.002    0.954   0.003
+                    gtsrb                    0.932         0.001    0.942   0.002
+                    indian                   0.745         0.006    0.705   0.005
+                    mapillary                0.836         0.008    0.802   0.009

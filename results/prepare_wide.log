@@ -1,0 +1,9 @@
+gtsrb train: 33,329 images, 36 classes, 166,645 with damage
+gtsrb val: 5,880 images, 36 classes, 123,480 with damage
+gtsrb test: 12,630 images, 36 classes, 265,230 with damage
+Indian: 355 street photos skipped, 5,127 kept
+Indian: 768 test images dropped as near copies of training images
+indian train: 3,307 images, 67 classes, 16,535 with damage
+indian val: 604 images, 66 classes, 12,684 with damage
+indian test: 448 images, 64 classes, 9,408 with damage
+Saved one example for each of 84 classes

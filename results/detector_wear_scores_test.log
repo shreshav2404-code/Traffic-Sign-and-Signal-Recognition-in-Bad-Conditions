@@ -1,0 +1,2 @@
+usage: detector_scores.py [-h] [--split {val,test}] [--weights WEIGHTS]
+detector_scores.py: error: unrecognized arguments: --label detector_wear

@@ -1,0 +1,13 @@
+real_train: 7,292 clean images, 14,584 worn copies
+unreal_train: 19,610 clean images, 39,220 worn copies
+real_test: 3,334 clean images, 16,670 worn copies
+unreal_test: 8,210 clean images, 41,050 worn copies
+gtsrb_train: 33,329 clean images, 66,658 worn copies
+gtsrb_val: 5,880 clean images, 29,400 worn copies
+gtsrb_test: 12,630 clean images, 63,150 worn copies
+indian_train: 3,307 clean images, 6,614 worn copies
+indian_val: 604 clean images, 3,020 worn copies
+indian_test: 448 clean images, 2,240 worn copies
+mapillary_train: 36,240 clean images, 72,480 worn copies
+mapillary_val: 6,427 clean images, 32,135 worn copies
+mapillary_test: 6,196 clean images, 30,980 worn copies

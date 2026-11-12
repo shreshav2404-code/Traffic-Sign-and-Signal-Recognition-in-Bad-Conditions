@@ -1,0 +1,184 @@
+condition,level,method,psnr,ssim
+clean,0,none,60.000,1.0000
+decolorization,1,none,31.431,0.9673
+decolorization,2,none,27.441,0.9456
+decolorization,3,none,24.881,0.9145
+decolorization,4,none,22.580,0.8713
+decolorization,5,none,20.894,0.8428
+lens blur,1,none,22.777,0.7022
+lens blur,2,none,19.226,0.4705
+lens blur,3,none,17.772,0.3430
+lens blur,4,none,16.687,0.2635
+lens blur,5,none,15.270,0.1915
+codec error,1,none,18.482,0.5396
+codec error,2,none,18.435,0.4602
+codec error,3,none,17.211,0.4052
+codec error,4,none,16.813,0.3563
+codec error,5,none,16.302,0.3205
+darkening,1,none,17.053,0.7576
+darkening,2,none,11.055,0.4777
+darkening,3,none,8.849,0.1940
+darkening,4,none,7.639,0.0762
+darkening,5,none,7.229,0.0325
+dirty lens,1,none,33.495,0.9656
+dirty lens,2,none,27.006,0.9601
+dirty lens,3,none,19.560,0.9036
+dirty lens,4,none,16.352,0.8392
+dirty lens,5,none,14.742,0.5546
+exposure,1,none,13.536,0.7801
+exposure,2,none,8.346,0.4751
+exposure,3,none,6.065,0.3020
+exposure,4,none,5.078,0.2017
+exposure,5,none,4.813,0.1561
+gaussian blur,1,none,21.682,0.6729
+gaussian blur,2,none,18.674,0.4436
+gaussian blur,3,none,16.864,0.3245
+gaussian blur,4,none,16.142,0.2524
+gaussian blur,5,none,15.542,0.2227
+noise,1,none,28.135,0.8945
+noise,2,none,23.142,0.7694
+noise,3,none,19.407,0.5846
+noise,4,none,16.894,0.4143
+noise,5,none,15.877,0.3549
+rain,1,none,17.568,0.6471
+rain,2,none,15.946,0.5452
+rain,3,none,14.811,0.4710
+rain,4,none,14.704,0.4501
+rain,5,none,14.504,0.4056
+shadow,1,none,30.391,0.9603
+shadow,2,none,26.095,0.9113
+shadow,3,none,25.958,0.8697
+shadow,4,none,23.699,0.7758
+shadow,5,none,21.360,0.6535
+snow,1,none,30.783,0.9576
+snow,2,none,21.756,0.8475
+snow,3,none,16.787,0.7137
+snow,4,none,12.336,0.5439
+snow,5,none,9.264,0.4781
+haze,1,none,21.204,0.8409
+haze,2,none,17.138,0.6873
+haze,3,none,14.129,0.4740
+haze,4,none,9.404,0.3147
+haze,5,none,7.971,0.2550
+clean,0,fixed,60.000,1.0000
+decolorization,1,fixed,31.431,0.9673
+decolorization,2,fixed,27.441,0.9456
+decolorization,3,fixed,24.881,0.9145
+decolorization,4,fixed,22.580,0.8713
+decolorization,5,fixed,20.894,0.8428
+lens blur,1,fixed,22.777,0.7022
+lens blur,2,fixed,19.226,0.4705
+lens blur,3,fixed,17.772,0.3430
+lens blur,4,fixed,16.687,0.2635
+lens blur,5,fixed,15.270,0.1915
+codec error,1,fixed,18.482,0.5396
+codec error,2,fixed,18.435,0.4602
+codec error,3,fixed,17.211,0.4052
+codec error,4,fixed,16.813,0.3563
+codec error,5,fixed,16.302,0.3205
+darkening,1,fixed,17.053,0.7576
+darkening,2,fixed,11.055,0.4777
+darkening,3,fixed,8.849,0.1940
+darkening,4,fixed,7.639,0.0762
+darkening,5,fixed,7.229,0.0325
+dirty lens,1,fixed,33.495,0.9656
+dirty lens,2,fixed,27.006,0.9601
+dirty lens,3,fixed,19.560,0.9036
+dirty lens,4,fixed,16.352,0.8392
+dirty lens,5,fixed,14.742,0.5546
+exposure,1,fixed,13.536,0.7801
+exposure,2,fixed,8.346,0.4751
+exposure,3,fixed,6.065,0.3020
+exposure,4,fixed,5.078,0.2017
+exposure,5,fixed,4.813,0.1561
+gaussian blur,1,fixed,21.682,0.6729
+gaussian blur,2,fixed,18.674,0.4436
+gaussian blur,3,fixed,16.864,0.3245
+gaussian blur,4,fixed,16.142,0.2524
+gaussian blur,5,fixed,15.542,0.2227
+noise,1,fixed,28.135,0.8945
+noise,2,fixed,23.142,0.7694
+noise,3,fixed,19.407,0.5846
+noise,4,fixed,16.894,0.4143
+noise,5,fixed,15.877,0.3549
+rain,1,fixed,17.568,0.6471
+rain,2,fixed,15.946,0.5452
+rain,3,fixed,14.811,0.4710
+rain,4,fixed,14.704,0.4501
+rain,5,fixed,14.504,0.4056
+shadow,1,fixed,30.391,0.9603
+shadow,2,fixed,26.095,0.9113
+shadow,3,fixed,25.958,0.8697
+shadow,4,fixed,23.699,0.7758
+shadow,5,fixed,21.360,0.6535
+snow,1,fixed,30.783,0.9576
+snow,2,fixed,21.756,0.8475
+snow,3,fixed,16.787,0.7137
+snow,4,fixed,12.336,0.5439
+snow,5,fixed,9.264,0.4781
+haze,1,fixed,21.204,0.8409
+haze,2,fixed,17.138,0.6873
+haze,3,fixed,14.129,0.4740
+haze,4,fixed,9.404,0.3147
+haze,5,fixed,7.971,0.2550
+clean,0,fuzzy,55.267,0.9858
+decolorization,1,fuzzy,29.616,0.9469
+decolorization,2,fuzzy,26.227,0.9290
+decolorization,3,fuzzy,24.362,0.9038
+decolorization,4,fuzzy,21.360,0.8473
+decolorization,5,fuzzy,20.602,0.8401
+lens blur,1,fuzzy,22.172,0.7031
+lens blur,2,fuzzy,18.511,0.4722
+lens blur,3,fuzzy,16.269,0.3390
+lens blur,4,fuzzy,15.096,0.2535
+lens blur,5,fuzzy,13.746,0.1857
+codec error,1,fuzzy,18.257,0.5368
+codec error,2,fuzzy,18.155,0.4545
+codec error,3,fuzzy,16.930,0.3953
+codec error,4,fuzzy,16.697,0.3547
+codec error,5,fuzzy,16.262,0.3179
+darkening,1,fuzzy,17.709,0.7555
+darkening,2,fuzzy,16.036,0.7510
+darkening,3,fuzzy,19.933,0.8437
+darkening,4,fuzzy,20.838,0.8239
+darkening,5,fuzzy,19.548,0.7391
+dirty lens,1,fuzzy,32.555,0.9603
+dirty lens,2,fuzzy,26.639,0.9560
+dirty lens,3,fuzzy,19.809,0.9012
+dirty lens,4,fuzzy,16.800,0.8402
+dirty lens,5,fuzzy,15.402,0.6181
+exposure,1,fuzzy,14.364,0.7848
+exposure,2,fuzzy,9.697,0.5277
+exposure,3,fuzzy,7.085,0.3675
+exposure,4,fuzzy,5.592,0.2523
+exposure,5,fuzzy,5.162,0.1889
+gaussian blur,1,fuzzy,21.243,0.6798
+gaussian blur,2,fuzzy,17.507,0.4587
+gaussian blur,3,fuzzy,15.251,0.3415
+gaussian blur,4,fuzzy,14.034,0.2671
+gaussian blur,5,fuzzy,13.222,0.2339
+noise,1,fuzzy,27.437,0.8843
+noise,2,fuzzy,22.688,0.7662
+noise,3,fuzzy,19.371,0.5903
+noise,4,fuzzy,17.115,0.4334
+noise,5,fuzzy,16.277,0.3806
+rain,1,fuzzy,17.606,0.6685
+rain,2,fuzzy,16.572,0.6134
+rain,3,fuzzy,15.582,0.5544
+rain,4,fuzzy,15.391,0.5270
+rain,5,fuzzy,14.784,0.5011
+shadow,1,fuzzy,29.241,0.9458
+shadow,2,fuzzy,25.578,0.9014
+shadow,3,fuzzy,24.985,0.8627
+shadow,4,fuzzy,24.461,0.8422
+shadow,5,fuzzy,23.967,0.8310
+snow,1,fuzzy,30.230,0.9494
+snow,2,fuzzy,21.167,0.8370
+snow,3,fuzzy,16.878,0.7108
+snow,4,fuzzy,12.749,0.5450
+snow,5,fuzzy,10.538,0.5007
+haze,1,fuzzy,21.208,0.8599
+haze,2,fuzzy,18.809,0.7744
+haze,3,fuzzy,19.715,0.7622
+haze,4,fuzzy,18.989,0.7499
+haze,5,fuzzy,18.420,0.7286

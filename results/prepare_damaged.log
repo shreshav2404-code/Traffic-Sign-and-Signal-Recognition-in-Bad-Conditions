@@ -1,0 +1,4 @@
+Kaggle: 3,194 labelled photos, 79 left out with the street photos, classes ['give_way', 'blue_circle', 'blue_square', 'red_blue', 'red_white_circle', 'triangle', 'no_entry', 'white', 'stop']
+Kaggle train: 2,175 frames, 994 crops {'stop': 185, 'no entry': 467, 'yield': 342}, 4,970 with damage
+Kaggle val: 460 frames, 230 crops {'stop': 86, 'no entry': 71, 'yield': 73}, 4,830 with damage
+Kaggle test: 480 frames, 230 crops {'stop': 45, 'no entry': 94, 'yield': 91}, 4,830 with damage

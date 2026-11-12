@@ -1,0 +1,32 @@
+cnn_global_all_seed0: 1,725,061 training, 406,372 validation
+epoch   1  train loss 4.080  val loss 2.967  val acc 0.261  val F1 0.089  159s
+epoch   2  train loss 3.323  val loss 2.329  val acc 0.402  val F1 0.187  154s
+epoch   3  train loss 2.630  val loss 1.708  val acc 0.557  val F1 0.355  154s
+epoch   4  train loss 1.860  val loss 1.213  val acc 0.670  val F1 0.505  154s
+epoch   5  train loss 1.324  val loss 0.970  val acc 0.740  val F1 0.568  154s
+epoch   6  train loss 1.030  val loss 0.728  val acc 0.813  val F1 0.639  154s
+epoch   7  train loss 0.837  val loss 0.703  val acc 0.817  val F1 0.649  154s
+epoch   8  train loss 0.723  val loss 0.764  val acc 0.794  val F1 0.640  154s
+epoch   9  train loss 0.654  val loss 0.692  val acc 0.815  val F1 0.673  154s
+epoch  10  train loss 0.575  val loss 0.601  val acc 0.838  val F1 0.683  154s
+epoch  11  train loss 0.533  val loss 0.608  val acc 0.834  val F1 0.689  154s
+epoch  12  train loss 0.499  val loss 0.562  val acc 0.850  val F1 0.721  172s
+epoch  13  train loss 0.455  val loss 0.504  val acc 0.862  val F1 0.736  167s
+epoch  14  train loss 0.423  val loss 0.533  val acc 0.852  val F1 0.723  167s
+epoch  15  train loss 0.401  val loss 0.500  val acc 0.865  val F1 0.739  167s
+epoch  16  train loss 0.374  val loss 0.471  val acc 0.873  val F1 0.752  167s
+epoch  17  train loss 0.359  val loss 0.474  val acc 0.872  val F1 0.753  167s
+epoch  18  train loss 0.341  val loss 0.442  val acc 0.879  val F1 0.752  168s
+epoch  19  train loss 0.323  val loss 0.475  val acc 0.871  val F1 0.738  25119s
+epoch  20  train loss 0.306  val loss 0.450  val acc 0.880  val F1 0.763  154s
+epoch  21  train loss 0.290  val loss 0.424  val acc 0.887  val F1 0.773  154s
+epoch  22  train loss 0.280  val loss 0.409  val acc 0.891  val F1 0.781  154s
+epoch  23  train loss 0.266  val loss 0.406  val acc 0.890  val F1 0.775  154s
+epoch  24  train loss 0.261  val loss 0.420  val acc 0.887  val F1 0.775  154s
+epoch  25  train loss 0.253  val loss 0.410  val acc 0.890  val F1 0.782  154s
+epoch  26  train loss 0.244  val loss 0.408  val acc 0.891  val F1 0.780  154s
+epoch  27  train loss 0.244  val loss 0.407  val acc 0.891  val F1 0.784  154s
+epoch  28  train loss 0.239  val loss 0.402  val acc 0.892  val F1 0.787  154s
+epoch  29  train loss 0.241  val loss 0.401  val acc 0.892  val F1 0.784  154s
+epoch  30  train loss 0.236  val loss 0.396  val acc 0.893  val F1 0.787  154s
+cnn_global_all_seed0: best val F1 0.787 at epoch 28

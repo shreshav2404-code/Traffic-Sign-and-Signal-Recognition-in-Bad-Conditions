@@ -1,0 +1,13 @@
+Reading labels...
+40,968 photos, Counter({'train': 30397, 'val': 5361, 'test': 5210})
+  5,000 photos
+  10,000 photos
+  15,000 photos
+  20,000 photos
+  25,000 photos
+  30,000 photos
+  35,000 photos
+  40,000 photos
+train: 40,127 sign crops
+val: 7,126 sign crops
+test: 6,861 sign crops

@@ -1,0 +1,184 @@
+condition,level,method,psnr,ssim,ms_per_image
+clean,0,None,60.0,1.0,0.0
+clean,0,Fixed,28.53,0.968,0.065
+clean,0,Fuzzy,53.37,0.988,0.195
+decolorization,1,None,31.29,0.965,0.0
+decolorization,1,Fixed,25.13,0.92,0.062
+decolorization,1,Fuzzy,29.84,0.941,0.167
+decolorization,2,None,27.6,0.949,0.0
+decolorization,2,Fixed,23.44,0.91,0.061
+decolorization,2,Fuzzy,26.42,0.927,0.157
+decolorization,3,None,24.4,0.917,0.0
+decolorization,3,Fixed,21.37,0.874,0.068
+decolorization,3,Fuzzy,23.4,0.897,0.145
+decolorization,4,None,22.57,0.894,0.0
+decolorization,4,Fixed,19.85,0.847,0.061
+decolorization,4,Fuzzy,21.81,0.876,0.138
+decolorization,5,None,21.44,0.859,0.0
+decolorization,5,Fixed,19.03,0.818,0.056
+decolorization,5,Fuzzy,20.61,0.839,0.139
+lens blur,1,None,23.9,0.769,0.0
+lens blur,1,Fixed,21.52,0.784,0.063
+lens blur,1,Fuzzy,22.84,0.767,0.165
+lens blur,2,None,20.03,0.541,0.0
+lens blur,2,Fixed,18.55,0.561,0.061
+lens blur,2,Fuzzy,18.52,0.532,0.171
+lens blur,3,None,18.15,0.384,0.0
+lens blur,3,Fixed,16.36,0.409,0.069
+lens blur,3,Fuzzy,15.97,0.384,0.188
+lens blur,4,None,16.5,0.302,0.0
+lens blur,4,Fixed,15.06,0.322,0.061
+lens blur,4,Fuzzy,14.54,0.303,0.197
+lens blur,5,None,16.38,0.252,0.0
+lens blur,5,Fixed,14.31,0.258,0.062
+lens blur,5,Fuzzy,13.07,0.231,0.198
+codec error,1,None,14.84,0.37,0.0
+codec error,1,Fixed,13.55,0.347,0.063
+codec error,1,Fuzzy,14.28,0.357,0.183
+codec error,2,None,14.32,0.325,0.0
+codec error,2,Fixed,13.1,0.303,0.065
+codec error,2,Fuzzy,13.8,0.316,0.175
+codec error,3,None,13.45,0.229,0.0
+codec error,3,Fixed,12.46,0.21,0.07
+codec error,3,Fuzzy,12.73,0.217,0.184
+codec error,4,None,12.84,0.225,0.0
+codec error,4,Fixed,11.85,0.203,0.065
+codec error,4,Fuzzy,12.26,0.21,0.175
+codec error,5,None,12.16,0.168,0.0
+codec error,5,Fixed,11.23,0.145,0.068
+codec error,5,Fuzzy,11.82,0.157,0.164
+darkening,1,None,18.01,0.885,0.0
+darkening,1,Fixed,22.95,0.932,0.069
+darkening,1,Fuzzy,18.11,0.877,0.175
+darkening,2,None,10.66,0.471,0.0
+darkening,2,Fixed,17.52,0.861,0.064
+darkening,2,Fuzzy,14.44,0.717,0.212
+darkening,3,None,8.86,0.192,0.0
+darkening,3,Fixed,15.73,0.779,0.062
+darkening,3,Fuzzy,19.3,0.825,0.217
+darkening,4,None,7.74,0.077,0.0
+darkening,4,Fixed,14.53,0.704,0.067
+darkening,4,Fuzzy,19.61,0.795,0.216
+darkening,5,None,6.95,0.029,0.0
+darkening,5,Fixed,13.31,0.625,0.062
+darkening,5,Fuzzy,19.36,0.757,0.21
+dirty lens,1,None,32.4,0.96,0.0
+dirty lens,1,Fixed,25.63,0.928,0.063
+dirty lens,1,Fuzzy,30.75,0.946,0.174
+dirty lens,2,None,26.97,0.956,0.0
+dirty lens,2,Fixed,25.01,0.928,0.063
+dirty lens,2,Fuzzy,26.01,0.94,0.183
+dirty lens,3,None,19.87,0.9,0.0
+dirty lens,3,Fixed,21.53,0.89,0.08
+dirty lens,3,Fuzzy,20.11,0.893,0.195
+dirty lens,4,None,16.32,0.813,0.0
+dirty lens,4,Fixed,18.41,0.834,0.065
+dirty lens,4,Fuzzy,16.88,0.815,0.177
+dirty lens,5,None,14.4,0.561,0.0
+dirty lens,5,Fixed,16.75,0.694,0.062
+dirty lens,5,Fuzzy,14.93,0.612,0.202
+exposure,1,None,14.27,0.79,0.0
+exposure,1,Fixed,14.67,0.773,0.062
+exposure,1,Fuzzy,14.98,0.784,0.184
+exposure,2,None,8.98,0.484,0.0
+exposure,2,Fixed,9.52,0.498,0.064
+exposure,2,Fuzzy,10.36,0.536,0.231
+exposure,3,None,6.38,0.285,0.0
+exposure,3,Fixed,6.79,0.297,0.06
+exposure,3,Fuzzy,7.46,0.349,0.229
+exposure,4,None,5.23,0.186,0.0
+exposure,4,Fixed,5.52,0.2,0.058
+exposure,4,Fuzzy,5.83,0.219,0.255
+exposure,5,None,4.8,0.145,0.0
+exposure,5,Fixed,5.02,0.16,0.058
+exposure,5,Fuzzy,5.2,0.178,0.301
+gaussian blur,1,None,21.11,0.65,0.0
+gaussian blur,1,Fixed,18.98,0.677,0.063
+gaussian blur,1,Fuzzy,19.38,0.637,0.172
+gaussian blur,2,None,19.45,0.543,0.0
+gaussian blur,2,Fixed,18.55,0.581,0.068
+gaussian blur,2,Fuzzy,18.38,0.548,0.191
+gaussian blur,3,None,17.13,0.364,0.0
+gaussian blur,3,Fixed,15.6,0.405,0.061
+gaussian blur,3,Fuzzy,14.77,0.374,0.199
+gaussian blur,4,None,16.54,0.316,0.0
+gaussian blur,4,Fixed,15.26,0.352,0.062
+gaussian blur,4,Fuzzy,14.5,0.328,0.186
+gaussian blur,5,None,15.58,0.25,0.0
+gaussian blur,5,Fixed,14.32,0.276,0.061
+gaussian blur,5,Fuzzy,13.06,0.25,0.194
+noise,1,None,27.98,0.903,0.0
+noise,1,Fixed,24.06,0.865,0.063
+noise,1,Fuzzy,26.93,0.887,0.161
+noise,2,None,23.32,0.767,0.0
+noise,2,Fixed,21.29,0.736,0.065
+noise,2,Fuzzy,22.5,0.751,0.195
+noise,3,None,19.56,0.599,0.0
+noise,3,Fixed,18.38,0.581,0.065
+noise,3,Fuzzy,19.41,0.603,0.232
+noise,4,None,17.19,0.479,0.0
+noise,4,Fixed,16.2,0.466,0.07
+noise,4,Fuzzy,16.86,0.471,0.31
+noise,5,None,15.46,0.392,0.0
+noise,5,Fixed,14.72,0.386,0.073
+noise,5,Fuzzy,15.39,0.388,0.289
+rain,1,None,17.07,0.645,0.0
+rain,1,Fixed,17.97,0.739,0.063
+rain,1,Fuzzy,16.54,0.659,0.185
+rain,2,None,15.52,0.548,0.0
+rain,2,Fixed,16.77,0.668,0.072
+rain,2,Fuzzy,15.49,0.599,0.205
+rain,3,None,14.94,0.482,0.0
+rain,3,Fixed,15.87,0.601,0.071
+rain,3,Fuzzy,14.72,0.541,0.218
+rain,4,None,14.41,0.472,0.0
+rain,4,Fixed,15.61,0.593,0.066
+rain,4,Fuzzy,14.35,0.531,0.19
+rain,5,None,14.37,0.416,0.0
+rain,5,Fixed,15.01,0.532,0.064
+rain,5,Fuzzy,14.25,0.496,0.2
+shadow,1,None,27.77,0.951,0.0
+shadow,1,Fixed,25.15,0.93,0.064
+shadow,1,Fuzzy,26.77,0.932,0.167
+shadow,2,None,25.7,0.911,0.0
+shadow,2,Fixed,23.02,0.898,0.064
+shadow,2,Fuzzy,24.56,0.887,0.179
+shadow,3,None,21.32,0.823,0.0
+shadow,3,Fixed,20.86,0.867,0.068
+shadow,3,Fuzzy,21.26,0.83,0.197
+shadow,4,None,20.84,0.72,0.0
+shadow,4,Fixed,19.42,0.807,0.063
+shadow,4,Fuzzy,20.66,0.766,0.186
+shadow,5,None,17.85,0.581,0.0
+shadow,5,Fixed,17.36,0.716,0.071
+shadow,5,Fuzzy,19.45,0.737,0.235
+snow,1,None,29.32,0.946,0.0
+snow,1,Fixed,24.29,0.915,0.065
+snow,1,Fuzzy,28.19,0.937,0.209
+snow,2,None,21.39,0.849,0.0
+snow,2,Fixed,20.12,0.825,0.071
+snow,2,Fuzzy,21.04,0.841,0.171
+snow,3,None,16.74,0.724,0.0
+snow,3,Fixed,16.23,0.699,0.069
+snow,3,Fuzzy,16.19,0.709,0.165
+snow,4,None,12.94,0.598,0.0
+snow,4,Fixed,13.4,0.593,0.062
+snow,4,Fuzzy,13.61,0.607,0.161
+snow,5,None,9.6,0.506,0.0
+snow,5,Fixed,11.07,0.523,0.059
+snow,5,Fuzzy,11.05,0.537,0.162
+haze,1,None,20.4,0.843,0.0
+haze,1,Fixed,23.78,0.925,0.064
+haze,1,Fuzzy,19.93,0.839,0.188
+haze,2,None,16.68,0.692,0.0
+haze,2,Fixed,22.12,0.896,0.069
+haze,2,Fuzzy,18.12,0.772,0.19
+haze,3,None,13.81,0.488,0.0
+haze,3,Fixed,19.91,0.822,0.064
+haze,3,Fuzzy,17.89,0.723,0.212
+haze,4,None,8.78,0.305,0.0
+haze,4,Fixed,14.71,0.727,0.061
+haze,4,Fuzzy,18.14,0.747,0.227
+haze,5,None,7.6,0.25,0.0
+haze,5,Fixed,13.31,0.674,0.072
+haze,5,Fuzzy,17.02,0.697,0.215

@@ -1,0 +1,4 @@
+mapillary train: 36,240 crops, 89 classes, 181,200 with damage
+mapillary val: 6,427 crops, 89 classes, 134,967 with damage
+mapillary test: 6,196 crops, 89 classes, 130,116 with damage
+Saved one example for each of 106 classes

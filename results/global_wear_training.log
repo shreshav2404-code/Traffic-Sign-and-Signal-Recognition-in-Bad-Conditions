@@ -1,0 +1,8 @@
+3 runs planned, 48 already finished
+[1/3] cnn_global_wear_all_seed0
+    cnn_global_wear_all_seed0: best val F1 0.757 at epoch 25 (92.7 min)
+[2/3] cnn_global_wear_all_seed1
+    cnn_global_wear_all_seed1: best val F1 0.763 at epoch 27 (92.7 min)
+[3/3] cnn_global_wear_all_seed2
+    cnn_global_wear_all_seed2: best val F1 0.766 at epoch 30 (92.7 min)
+All runs finished

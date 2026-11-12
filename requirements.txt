@@ -1,0 +1,15 @@
+# PyTorch 2.5.1 and pandas 2.2.3: Windows Smart App Control blocks PyTorch 2.15 and pandas 3.1.0 (decision 34).
+# The models were trained under PyTorch 2.15 and load unchanged under 2.5.1.
+--extra-index-url https://download.pytorch.org/whl/cu124
+torch==2.5.1+cu124
+torchvision==0.20.1+cu124
+numpy==2.4.6
+opencv-python==5.0.0.93
+scikit-image==0.26.0
+scikit-fuzzy==0.5.0
+scikit-learn==1.9.1
+matplotlib==3.11.2
+pandas==2.2.3
+streamlit==1.66.1
+streamlit-cropper==0.3.1
+ultralytics==8.4.198

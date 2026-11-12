@@ -1,0 +1,291 @@
+cnn_global_clean_seed0 original signs_real       accuracy 0.718  F1 0.732
+cnn_global_clean_seed0 original signs_simulated  accuracy 0.732  F1 0.774
+D:\mini_project\deep_learning\data.py:124: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\torch\csrc\utils\tensor_numpy.cpp:214.)
+  tensor = torch.from_numpy(inputs).to(device)
+cnn_global_clean_seed0 original lights           accuracy 0.876  F1 0.920
+cnn_global_clean_seed0 original gtsrb            accuracy 0.809  F1 0.802
+cnn_global_clean_seed0 original indian           accuracy 0.805  F1 0.707
+cnn_global_clean_seed0 original mapillary        accuracy 0.787  F1 0.758
+cnn_global_clean_seed0 original worn_signs_real  accuracy 0.476  F1 0.614
+cnn_global_clean_seed0 original worn_signs_simulated accuracy 0.612  F1 0.675
+cnn_global_clean_seed0 original worn_gtsrb       accuracy 0.646  F1 0.645
+cnn_global_clean_seed0 original worn_indian      accuracy 0.547  F1 0.458
+cnn_global_clean_seed0 original worn_mapillary   accuracy 0.582  F1 0.527
+cnn_global_clean_seed0 original damaged_photos   accuracy 0.902  F1 0.923
+cnn_global_clean_seed0 fuzzy    signs_real       accuracy 0.762  F1 0.777
+cnn_global_clean_seed0 fuzzy    signs_simulated  accuracy 0.766  F1 0.806
+cnn_global_clean_seed0 fuzzy    lights           accuracy 0.979  F1 0.982
+cnn_global_clean_seed0 fuzzy    gtsrb            accuracy 0.890  F1 0.889
+cnn_global_clean_seed0 fuzzy    indian           accuracy 0.834  F1 0.724
+cnn_global_clean_seed0 fuzzy    mapillary        accuracy 0.850  F1 0.817
+cnn_global_clean_seed0 fuzzy    worn_signs_real  accuracy 0.477  F1 0.619
+cnn_global_clean_seed0 fuzzy    worn_signs_simulated accuracy 0.613  F1 0.674
+cnn_global_clean_seed0 fuzzy    worn_gtsrb       accuracy 0.651  F1 0.651
+cnn_global_clean_seed0 fuzzy    worn_indian      accuracy 0.539  F1 0.443
+cnn_global_clean_seed0 fuzzy    worn_mapillary   accuracy 0.583  F1 0.529
+cnn_global_clean_seed0 fuzzy    damaged_photos   accuracy 0.952  F1 0.958
+cnn_global_clean_seed1 original signs_real       accuracy 0.746  F1 0.783
+cnn_global_clean_seed1 original signs_simulated  accuracy 0.730  F1 0.777
+cnn_global_clean_seed1 original lights           accuracy 0.864  F1 0.918
+cnn_global_clean_seed1 original gtsrb            accuracy 0.783  F1 0.794
+cnn_global_clean_seed1 original indian           accuracy 0.788  F1 0.704
+cnn_global_clean_seed1 original mapillary        accuracy 0.784  F1 0.759
+cnn_global_clean_seed1 original worn_signs_real  accuracy 0.490  F1 0.567
+cnn_global_clean_seed1 original worn_signs_simulated accuracy 0.581  F1 0.659
+cnn_global_clean_seed1 original worn_gtsrb       accuracy 0.632  F1 0.625
+cnn_global_clean_seed1 original worn_indian      accuracy 0.557  F1 0.455
+cnn_global_clean_seed1 original worn_mapillary   accuracy 0.578  F1 0.515
+cnn_global_clean_seed1 original damaged_photos   accuracy 0.892  F1 0.916
+cnn_global_clean_seed1 fuzzy    signs_real       accuracy 0.781  F1 0.798
+cnn_global_clean_seed1 fuzzy    signs_simulated  accuracy 0.765  F1 0.808
+cnn_global_clean_seed1 fuzzy    lights           accuracy 0.978  F1 0.988
+cnn_global_clean_seed1 fuzzy    gtsrb            accuracy 0.892  F1 0.887
+cnn_global_clean_seed1 fuzzy    indian           accuracy 0.828  F1 0.718
+cnn_global_clean_seed1 fuzzy    mapillary        accuracy 0.853  F1 0.823
+cnn_global_clean_seed1 fuzzy    worn_signs_real  accuracy 0.490  F1 0.568
+cnn_global_clean_seed1 fuzzy    worn_signs_simulated accuracy 0.584  F1 0.659
+cnn_global_clean_seed1 fuzzy    worn_gtsrb       accuracy 0.636  F1 0.629
+cnn_global_clean_seed1 fuzzy    worn_indian      accuracy 0.555  F1 0.441
+cnn_global_clean_seed1 fuzzy    worn_mapillary   accuracy 0.578  F1 0.514
+cnn_global_clean_seed1 fuzzy    damaged_photos   accuracy 0.957  F1 0.964
+cnn_global_clean_seed2 original signs_real       accuracy 0.738  F1 0.756
+cnn_global_clean_seed2 original signs_simulated  accuracy 0.739  F1 0.770
+cnn_global_clean_seed2 original lights           accuracy 0.849  F1 0.871
+cnn_global_clean_seed2 original gtsrb            accuracy 0.789  F1 0.807
+cnn_global_clean_seed2 original indian           accuracy 0.769  F1 0.697
+cnn_global_clean_seed2 original mapillary        accuracy 0.772  F1 0.749
+cnn_global_clean_seed2 original worn_signs_real  accuracy 0.406  F1 0.555
+cnn_global_clean_seed2 original worn_signs_simulated accuracy 0.566  F1 0.645
+cnn_global_clean_seed2 original worn_gtsrb       accuracy 0.604  F1 0.628
+cnn_global_clean_seed2 original worn_indian      accuracy 0.510  F1 0.439
+cnn_global_clean_seed2 original worn_mapillary   accuracy 0.563  F1 0.517
+cnn_global_clean_seed2 original damaged_photos   accuracy 0.882  F1 0.901
+cnn_global_clean_seed2 fuzzy    signs_real       accuracy 0.772  F1 0.786
+cnn_global_clean_seed2 fuzzy    signs_simulated  accuracy 0.768  F1 0.804
+cnn_global_clean_seed2 fuzzy    lights           accuracy 0.966  F1 0.969
+cnn_global_clean_seed2 fuzzy    gtsrb            accuracy 0.890  F1 0.889
+cnn_global_clean_seed2 fuzzy    indian           accuracy 0.814  F1 0.711
+cnn_global_clean_seed2 fuzzy    mapillary        accuracy 0.843  F1 0.815
+cnn_global_clean_seed2 fuzzy    worn_signs_real  accuracy 0.409  F1 0.567
+cnn_global_clean_seed2 fuzzy    worn_signs_simulated accuracy 0.571  F1 0.648
+cnn_global_clean_seed2 fuzzy    worn_gtsrb       accuracy 0.608  F1 0.631
+cnn_global_clean_seed2 fuzzy    worn_indian      accuracy 0.512  F1 0.448
+cnn_global_clean_seed2 fuzzy    worn_mapillary   accuracy 0.564  F1 0.516
+cnn_global_clean_seed2 fuzzy    damaged_photos   accuracy 0.943  F1 0.949
+cnn_global_all_seed0 original signs_real       accuracy 0.833  F1 0.827
+cnn_global_all_seed0 original signs_simulated  accuracy 0.893  F1 0.890
+cnn_global_all_seed0 original lights           accuracy 0.992  F1 0.996
+cnn_global_all_seed0 original gtsrb            accuracy 0.950  F1 0.940
+cnn_global_all_seed0 original indian           accuracy 0.814  F1 0.702
+cnn_global_all_seed0 original mapillary        accuracy 0.826  F1 0.787
+cnn_global_all_seed0 original worn_signs_real  accuracy 0.646  F1 0.638
+cnn_global_all_seed0 original worn_signs_simulated accuracy 0.714  F1 0.734
+cnn_global_all_seed0 original worn_gtsrb       accuracy 0.668  F1 0.644
+cnn_global_all_seed0 original worn_indian      accuracy 0.510  F1 0.407
+cnn_global_all_seed0 original worn_mapillary   accuracy 0.520  F1 0.461
+cnn_global_all_seed0 original damaged_photos   accuracy 0.952  F1 0.966
+cnn_global_all_seed0 fuzzy    signs_real       accuracy 0.827  F1 0.825
+cnn_global_all_seed0 fuzzy    signs_simulated  accuracy 0.883  F1 0.880
+cnn_global_all_seed0 fuzzy    lights           accuracy 0.992  F1 0.996
+cnn_global_all_seed0 fuzzy    gtsrb            accuracy 0.946  F1 0.943
+cnn_global_all_seed0 fuzzy    indian           accuracy 0.821  F1 0.698
+cnn_global_all_seed0 fuzzy    mapillary        accuracy 0.827  F1 0.792
+cnn_global_all_seed0 fuzzy    worn_signs_real  accuracy 0.651  F1 0.645
+cnn_global_all_seed0 fuzzy    worn_signs_simulated accuracy 0.715  F1 0.735
+cnn_global_all_seed0 fuzzy    worn_gtsrb       accuracy 0.671  F1 0.644
+cnn_global_all_seed0 fuzzy    worn_indian      accuracy 0.511  F1 0.407
+cnn_global_all_seed0 fuzzy    worn_mapillary   accuracy 0.521  F1 0.462
+cnn_global_all_seed0 fuzzy    damaged_photos   accuracy 0.953  F1 0.965
+cnn_global_all_seed1 original signs_real       accuracy 0.866  F1 0.835
+cnn_global_all_seed1 original signs_simulated  accuracy 0.892  F1 0.888
+cnn_global_all_seed1 original lights           accuracy 0.995  F1 0.996
+cnn_global_all_seed1 original gtsrb            accuracy 0.954  F1 0.945
+cnn_global_all_seed1 original indian           accuracy 0.827  F1 0.710
+cnn_global_all_seed1 original mapillary        accuracy 0.842  F1 0.800
+cnn_global_all_seed1 original worn_signs_real  accuracy 0.652  F1 0.642
+cnn_global_all_seed1 original worn_signs_simulated accuracy 0.710  F1 0.728
+cnn_global_all_seed1 original worn_gtsrb       accuracy 0.665  F1 0.636
+cnn_global_all_seed1 original worn_indian      accuracy 0.540  F1 0.415
+cnn_global_all_seed1 original worn_mapillary   accuracy 0.523  F1 0.459
+cnn_global_all_seed1 original damaged_photos   accuracy 0.955  F1 0.964
+cnn_global_all_seed1 fuzzy    signs_real       accuracy 0.858  F1 0.831
+cnn_global_all_seed1 fuzzy    signs_simulated  accuracy 0.880  F1 0.877
+cnn_global_all_seed1 fuzzy    lights           accuracy 0.990  F1 0.995
+cnn_global_all_seed1 fuzzy    gtsrb            accuracy 0.943  F1 0.944
+cnn_global_all_seed1 fuzzy    indian           accuracy 0.825  F1 0.702
+cnn_global_all_seed1 fuzzy    mapillary        accuracy 0.843  F1 0.808
+cnn_global_all_seed1 fuzzy    worn_signs_real  accuracy 0.652  F1 0.641
+cnn_global_all_seed1 fuzzy    worn_signs_simulated accuracy 0.711  F1 0.728
+cnn_global_all_seed1 fuzzy    worn_gtsrb       accuracy 0.667  F1 0.636
+cnn_global_all_seed1 fuzzy    worn_indian      accuracy 0.539  F1 0.411
+cnn_global_all_seed1 fuzzy    worn_mapillary   accuracy 0.523  F1 0.459
+cnn_global_all_seed1 fuzzy    damaged_photos   accuracy 0.955  F1 0.963
+cnn_global_all_seed2 original signs_real       accuracy 0.864  F1 0.837
+cnn_global_all_seed2 original signs_simulated  accuracy 0.893  F1 0.889
+cnn_global_all_seed2 original lights           accuracy 0.994  F1 0.995
+cnn_global_all_seed2 original gtsrb            accuracy 0.953  F1 0.944
+cnn_global_all_seed2 original indian           accuracy 0.823  F1 0.699
+cnn_global_all_seed2 original mapillary        accuracy 0.847  F1 0.805
+cnn_global_all_seed2 original worn_signs_real  accuracy 0.631  F1 0.619
+cnn_global_all_seed2 original worn_signs_simulated accuracy 0.718  F1 0.740
+cnn_global_all_seed2 original worn_gtsrb       accuracy 0.664  F1 0.653
+cnn_global_all_seed2 original worn_indian      accuracy 0.503  F1 0.394
+cnn_global_all_seed2 original worn_mapillary   accuracy 0.531  F1 0.471
+cnn_global_all_seed2 original damaged_photos   accuracy 0.948  F1 0.960
+cnn_global_all_seed2 fuzzy    signs_real       accuracy 0.853  F1 0.831
+cnn_global_all_seed2 fuzzy    signs_simulated  accuracy 0.882  F1 0.877
+cnn_global_all_seed2 fuzzy    lights           accuracy 0.994  F1 0.995
+cnn_global_all_seed2 fuzzy    gtsrb            accuracy 0.945  F1 0.947
+cnn_global_all_seed2 fuzzy    indian           accuracy 0.824  F1 0.689
+cnn_global_all_seed2 fuzzy    mapillary        accuracy 0.849  F1 0.811
+cnn_global_all_seed2 fuzzy    worn_signs_real  accuracy 0.632  F1 0.618
+cnn_global_all_seed2 fuzzy    worn_signs_simulated accuracy 0.719  F1 0.740
+cnn_global_all_seed2 fuzzy    worn_gtsrb       accuracy 0.669  F1 0.655
+cnn_global_all_seed2 fuzzy    worn_indian      accuracy 0.505  F1 0.392
+cnn_global_all_seed2 fuzzy    worn_mapillary   accuracy 0.532  F1 0.471
+cnn_global_all_seed2 fuzzy    damaged_photos   accuracy 0.951  F1 0.960
+cnn_global_wear_all_seed0 original signs_real       accuracy 0.849  F1 0.834
+cnn_global_wear_all_seed0 original signs_simulated  accuracy 0.883  F1 0.878
+cnn_global_wear_all_seed0 original lights           accuracy 0.993  F1 0.995
+cnn_global_wear_all_seed0 original gtsrb            accuracy 0.944  F1 0.935
+cnn_global_wear_all_seed0 original indian           accuracy 0.822  F1 0.705
+cnn_global_wear_all_seed0 original mapillary        accuracy 0.827  F1 0.777
+cnn_global_wear_all_seed0 original worn_signs_real  accuracy 0.772  F1 0.843
+cnn_global_wear_all_seed0 original worn_signs_simulated accuracy 0.886  F1 0.912
+cnn_global_wear_all_seed0 original worn_gtsrb       accuracy 0.868  F1 0.865
+cnn_global_wear_all_seed0 original worn_indian      accuracy 0.686  F1 0.533
+cnn_global_wear_all_seed0 original worn_mapillary   accuracy 0.703  F1 0.633
+cnn_global_wear_all_seed0 original damaged_photos   accuracy 0.954  F1 0.966
+cnn_global_wear_all_seed0 fuzzy    signs_real       accuracy 0.841  F1 0.823
+cnn_global_wear_all_seed0 fuzzy    signs_simulated  accuracy 0.877  F1 0.872
+cnn_global_wear_all_seed0 fuzzy    lights           accuracy 0.990  F1 0.995
+cnn_global_wear_all_seed0 fuzzy    gtsrb            accuracy 0.927  F1 0.930
+cnn_global_wear_all_seed0 fuzzy    indian           accuracy 0.825  F1 0.711
+cnn_global_wear_all_seed0 fuzzy    mapillary        accuracy 0.827  F1 0.784
+cnn_global_wear_all_seed0 fuzzy    worn_signs_real  accuracy 0.775  F1 0.848
+cnn_global_wear_all_seed0 fuzzy    worn_signs_simulated accuracy 0.886  F1 0.911
+cnn_global_wear_all_seed0 fuzzy    worn_gtsrb       accuracy 0.866  F1 0.861
+cnn_global_wear_all_seed0 fuzzy    worn_indian      accuracy 0.680  F1 0.530
+cnn_global_wear_all_seed0 fuzzy    worn_mapillary   accuracy 0.703  F1 0.633
+cnn_global_wear_all_seed0 fuzzy    damaged_photos   accuracy 0.962  F1 0.970
+cnn_global_wear_all_seed1 original signs_real       accuracy 0.856  F1 0.825
+cnn_global_wear_all_seed1 original signs_simulated  accuracy 0.885  F1 0.880
+cnn_global_wear_all_seed1 original lights           accuracy 0.992  F1 0.995
+cnn_global_wear_all_seed1 original gtsrb            accuracy 0.941  F1 0.940
+cnn_global_wear_all_seed1 original indian           accuracy 0.802  F1 0.695
+cnn_global_wear_all_seed1 original mapillary        accuracy 0.822  F1 0.776
+cnn_global_wear_all_seed1 original worn_signs_real  accuracy 0.768  F1 0.851
+cnn_global_wear_all_seed1 original worn_signs_simulated accuracy 0.884  F1 0.909
+cnn_global_wear_all_seed1 original worn_gtsrb       accuracy 0.879  F1 0.880
+cnn_global_wear_all_seed1 original worn_indian      accuracy 0.695  F1 0.539
+cnn_global_wear_all_seed1 original worn_mapillary   accuracy 0.704  F1 0.641
+cnn_global_wear_all_seed1 original damaged_photos   accuracy 0.948  F1 0.960
+cnn_global_wear_all_seed1 fuzzy    signs_real       accuracy 0.843  F1 0.823
+cnn_global_wear_all_seed1 fuzzy    signs_simulated  accuracy 0.873  F1 0.869
+cnn_global_wear_all_seed1 fuzzy    lights           accuracy 0.994  F1 0.996
+cnn_global_wear_all_seed1 fuzzy    gtsrb            accuracy 0.931  F1 0.935
+cnn_global_wear_all_seed1 fuzzy    indian           accuracy 0.816  F1 0.706
+cnn_global_wear_all_seed1 fuzzy    mapillary        accuracy 0.825  F1 0.785
+cnn_global_wear_all_seed1 fuzzy    worn_signs_real  accuracy 0.768  F1 0.846
+cnn_global_wear_all_seed1 fuzzy    worn_signs_simulated accuracy 0.885  F1 0.909
+cnn_global_wear_all_seed1 fuzzy    worn_gtsrb       accuracy 0.877  F1 0.875
+cnn_global_wear_all_seed1 fuzzy    worn_indian      accuracy 0.693  F1 0.547
+cnn_global_wear_all_seed1 fuzzy    worn_mapillary   accuracy 0.704  F1 0.640
+cnn_global_wear_all_seed1 fuzzy    damaged_photos   accuracy 0.958  F1 0.964
+cnn_global_wear_all_seed2 original signs_real       accuracy 0.855  F1 0.831
+cnn_global_wear_all_seed2 original signs_simulated  accuracy 0.889  F1 0.886
+cnn_global_wear_all_seed2 original lights           accuracy 0.995  F1 0.997
+cnn_global_wear_all_seed2 original gtsrb            accuracy 0.943  F1 0.934
+cnn_global_wear_all_seed2 original indian           accuracy 0.816  F1 0.679
+cnn_global_wear_all_seed2 original mapillary        accuracy 0.839  F1 0.797
+cnn_global_wear_all_seed2 original worn_signs_real  accuracy 0.773  F1 0.872
+cnn_global_wear_all_seed2 original worn_signs_simulated accuracy 0.886  F1 0.913
+cnn_global_wear_all_seed2 original worn_gtsrb       accuracy 0.877  F1 0.879
+cnn_global_wear_all_seed2 original worn_indian      accuracy 0.700  F1 0.549
+cnn_global_wear_all_seed2 original worn_mapillary   accuracy 0.718  F1 0.651
+cnn_global_wear_all_seed2 original damaged_photos   accuracy 0.946  F1 0.959
+cnn_global_wear_all_seed2 fuzzy    signs_real       accuracy 0.841  F1 0.822
+cnn_global_wear_all_seed2 fuzzy    signs_simulated  accuracy 0.875  F1 0.871
+cnn_global_wear_all_seed2 fuzzy    lights           accuracy 0.995  F1 0.996
+cnn_global_wear_all_seed2 fuzzy    gtsrb            accuracy 0.936  F1 0.937
+cnn_global_wear_all_seed2 fuzzy    indian           accuracy 0.826  F1 0.693
+cnn_global_wear_all_seed2 fuzzy    mapillary        accuracy 0.840  F1 0.802
+cnn_global_wear_all_seed2 fuzzy    worn_signs_real  accuracy 0.773  F1 0.871
+cnn_global_wear_all_seed2 fuzzy    worn_signs_simulated accuracy 0.887  F1 0.914
+cnn_global_wear_all_seed2 fuzzy    worn_gtsrb       accuracy 0.876  F1 0.877
+cnn_global_wear_all_seed2 fuzzy    worn_indian      accuracy 0.699  F1 0.555
+cnn_global_wear_all_seed2 fuzzy    worn_mapillary   accuracy 0.719  F1 0.651
+cnn_global_wear_all_seed2 fuzzy    damaged_photos   accuracy 0.954  F1 0.963
+
+clean       original signs_real               F1 0.757 ± 0.025  accuracy 0.734
+clean       original signs_simulated          F1 0.774 ± 0.004  accuracy 0.734
+clean       original lights                   F1 0.903 ± 0.027  accuracy 0.863
+clean       original gtsrb                    F1 0.801 ± 0.006  accuracy 0.794
+clean       original indian                   F1 0.703 ± 0.005  accuracy 0.787
+clean       original mapillary                F1 0.755 ± 0.006  accuracy 0.781
+clean       original worn_signs_real          F1 0.579 ± 0.031  accuracy 0.457
+clean       original worn_signs_simulated     F1 0.660 ± 0.015  accuracy 0.586
+clean       original worn_gtsrb               F1 0.633 ± 0.011  accuracy 0.628
+clean       original worn_indian              F1 0.450 ± 0.010  accuracy 0.538
+clean       original worn_mapillary           F1 0.520 ± 0.007  accuracy 0.574
+clean       original damaged_photos           F1 0.913 ± 0.011  accuracy 0.892
+clean       fuzzy    signs_real               F1 0.787 ± 0.011  accuracy 0.772
+clean       fuzzy    signs_simulated          F1 0.806 ± 0.002  accuracy 0.766
+clean       fuzzy    lights                   F1 0.980 ± 0.009  accuracy 0.974
+clean       fuzzy    gtsrb                    F1 0.888 ± 0.001  accuracy 0.891
+clean       fuzzy    indian                   F1 0.718 ± 0.007  accuracy 0.825
+clean       fuzzy    mapillary                F1 0.818 ± 0.004  accuracy 0.848
+clean       fuzzy    worn_signs_real          F1 0.585 ± 0.030  accuracy 0.459
+clean       fuzzy    worn_signs_simulated     F1 0.660 ± 0.013  accuracy 0.589
+clean       fuzzy    worn_gtsrb               F1 0.637 ± 0.012  accuracy 0.632
+clean       fuzzy    worn_indian              F1 0.444 ± 0.003  accuracy 0.535
+clean       fuzzy    worn_mapillary           F1 0.520 ± 0.008  accuracy 0.575
+clean       fuzzy    damaged_photos           F1 0.957 ± 0.008  accuracy 0.950
+all         original signs_real               F1 0.833 ± 0.005  accuracy 0.854
+all         original signs_simulated          F1 0.889 ± 0.001  accuracy 0.892
+all         original lights                   F1 0.996 ± 0.000  accuracy 0.994
+all         original gtsrb                    F1 0.943 ± 0.003  accuracy 0.953
+all         original indian                   F1 0.704 ± 0.006  accuracy 0.821
+all         original mapillary                F1 0.797 ± 0.009  accuracy 0.838
+all         original worn_signs_real          F1 0.633 ± 0.012  accuracy 0.643
+all         original worn_signs_simulated     F1 0.734 ± 0.006  accuracy 0.714
+all         original worn_gtsrb               F1 0.644 ± 0.009  accuracy 0.665
+all         original worn_indian              F1 0.405 ± 0.010  accuracy 0.518
+all         original worn_mapillary           F1 0.464 ± 0.007  accuracy 0.525
+all         original damaged_photos           F1 0.963 ± 0.003  accuracy 0.951
+all         fuzzy    signs_real               F1 0.829 ± 0.003  accuracy 0.846
+all         fuzzy    signs_simulated          F1 0.878 ± 0.002  accuracy 0.882
+all         fuzzy    lights                   F1 0.995 ± 0.001  accuracy 0.992
+all         fuzzy    gtsrb                    F1 0.945 ± 0.002  accuracy 0.945
+all         fuzzy    indian                   F1 0.696 ± 0.007  accuracy 0.823
+all         fuzzy    mapillary                F1 0.804 ± 0.010  accuracy 0.840
+all         fuzzy    worn_signs_real          F1 0.635 ± 0.015  accuracy 0.645
+all         fuzzy    worn_signs_simulated     F1 0.734 ± 0.006  accuracy 0.715
+all         fuzzy    worn_gtsrb               F1 0.645 ± 0.010  accuracy 0.669
+all         fuzzy    worn_indian              F1 0.403 ± 0.010  accuracy 0.518
+all         fuzzy    worn_mapillary           F1 0.464 ± 0.006  accuracy 0.525
+all         fuzzy    damaged_photos           F1 0.962 ± 0.002  accuracy 0.953
+all + wear  original signs_real               F1 0.830 ± 0.005  accuracy 0.854
+all + wear  original signs_simulated          F1 0.881 ± 0.004  accuracy 0.886
+all + wear  original lights                   F1 0.996 ± 0.001  accuracy 0.993
+all + wear  original gtsrb                    F1 0.936 ± 0.003  accuracy 0.943
+all + wear  original indian                   F1 0.693 ± 0.013  accuracy 0.813
+all + wear  original mapillary                F1 0.783 ± 0.012  accuracy 0.829
+all + wear  original worn_signs_real          F1 0.855 ± 0.015  accuracy 0.771
+all + wear  original worn_signs_simulated     F1 0.911 ± 0.002  accuracy 0.885
+all + wear  original worn_gtsrb               F1 0.875 ± 0.008  accuracy 0.875
+all + wear  original worn_indian              F1 0.540 ± 0.008  accuracy 0.694
+all + wear  original worn_mapillary           F1 0.642 ± 0.009  accuracy 0.708
+all + wear  original damaged_photos           F1 0.962 ± 0.004  accuracy 0.949
+all + wear  fuzzy    signs_real               F1 0.823 ± 0.000  accuracy 0.841
+all + wear  fuzzy    signs_simulated          F1 0.871 ± 0.002  accuracy 0.875
+all + wear  fuzzy    lights                   F1 0.996 ± 0.001  accuracy 0.993
+all + wear  fuzzy    gtsrb                    F1 0.934 ± 0.004  accuracy 0.931
+all + wear  fuzzy    indian                   F1 0.704 ± 0.009  accuracy 0.822
+all + wear  fuzzy    mapillary                F1 0.791 ± 0.010  accuracy 0.831
+all + wear  fuzzy    worn_signs_real          F1 0.855 ± 0.014  accuracy 0.772
+all + wear  fuzzy    worn_signs_simulated     F1 0.911 ± 0.002  accuracy 0.886
+all + wear  fuzzy    worn_gtsrb               F1 0.871 ± 0.009  accuracy 0.873
+all + wear  fuzzy    worn_indian              F1 0.544 ± 0.013  accuracy 0.691
+all + wear  fuzzy    worn_mapillary           F1 0.641 ± 0.009  accuracy 0.708
+all + wear  fuzzy    damaged_photos           F1 0.966 ± 0.003  accuracy 0.958
