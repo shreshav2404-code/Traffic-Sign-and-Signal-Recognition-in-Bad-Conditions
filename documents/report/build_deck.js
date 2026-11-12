@@ -123,7 +123,7 @@ stat(slide, 0.7, 4.45, 2.9, "0.819", "macro F1 on 203,374 real damaged test sign
 stat(slide, 3.75, 4.45, 2.9, "97.9%", "accuracy on 281,547 traffic-light test images", true);
 stat(slide, 6.8, 4.45, 2.9, "106", "sign and light classes from 7 datasets", true);
 stat(slide, 9.85, 4.45, 2.9, "0.786", "on worn real signs after wear training (0.597 before)", true);
-slide.addText("Presented by: Keshav Kumar (20241CAI0072)     Guide: ____________________     Department: PSAIAC", {
+slide.addText("Presented by: Keshav Kumar (20241CAI0072)     Department: PSAIAC", {
   x: 0.7, y: 6.55, w: 11.9, h: 0.4, fontSize: 14, color: "CADCFC", margin: 0, isTextBox: true,
 });
 slide.addNotes("One pipeline reads traffic signs and lights from damaged images. Fuzzy logic decides how to repair each image, and neural networks name the sign. Every score is the mean of 3 training runs, tested once.");
