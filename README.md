@@ -49,16 +49,37 @@ while fuzzy enhancement still helps every model that never saw damage and leaves
 
 | Dataset | What it adds | Images used |
 |---|---|---|
-| CURE-TSR | 14 signs, 12 kinds of damage at 5 levels, each with a clean original | 2,206,100 |
-| LISA Traffic Light | red, yellow and green lights, day and night | 41,923 crops |
-| GTSRB | real German sign photos, 43 classes | 51,839 crops |
-| Indian Traffic Sign Classification (Hugging Face) | real Indian sign photos, 85 classes | 4,359 crops |
-| Mapillary Traffic Sign Dataset (fully annotated part) | street signs from six continents, and an "other sign" class | 48,863 crops |
-| Kaggle Damaged Signs Dataset (CC0) | faded, rusted and vandalised signs | 3,194 photos |
-| Roboflow Detection_of_damage_signs (CC BY 4.0) | close-ups sorted by kind of damage | 1,996 photos |
+| [CURE-TSR](https://github.com/olivesgatech/CURE-TSR) ([IEEE DataPort](https://ieee-dataport.org/open-access/cure-tsr-challenging-unreal-and-real-environments-traffic-sign-recognition)) | 14 signs, 12 kinds of damage at 5 levels, each with a clean original | 2,206,100 |
+| [LISA Traffic Light Dataset](https://www.kaggle.com/datasets/mbornoe/lisa-traffic-light-dataset) (Kaggle) | red, yellow and green lights, day and night | 41,923 crops |
+| [GTSRB](https://www.kaggle.com/datasets/meowmeowmeowmeowmeow/gtsrb-german-traffic-sign) (Kaggle copy) | real German sign photos, 43 classes | 51,839 crops |
+| [Indian Traffic Sign Classification](https://huggingface.co/datasets/kannanwisen/Indian-Traffic-Sign-Classification) (Hugging Face) | real Indian sign photos, 85 classes | 4,359 crops |
+| [Mapillary Traffic Sign Dataset](https://www.mapillary.com/dataset/trafficsign), fully annotated part (CC BY-NC-SA) | street signs from six continents, and an "other sign" class | 48,863 crops |
+| [Damaged Signs Dataset](https://www.kaggle.com/datasets/danielvareta/damaged-signs-dataset) (Kaggle, CC0) | faded, rusted and vandalised Portuguese signs | 3,194 photos |
+| [Detection_of_damage_signs v3](https://universe.roboflow.com/trafficresearch/detection_of_damage_signs/dataset/3) (Roboflow, CC BY 4.0) | close-ups sorted by kind of damage | 1,996 photos |
 
-The datasets are **not** in this repository: they take about 150 GB. To retrain, download them into `data/raw/`
-and run the preparation scripts in `scripts/`, as described in [documents/workflow.md](documents/workflow.md).
+The datasets are **not** in this repository, because they take about 150 GB. To retrain, download them and save
+them under `data/raw/` with these exact names. Kaggle downloads arrive as `archive.zip`, so rename them.
+
+```text
+data/raw/
+├── CURE-TSR.zip                       holds Real_Train.zip, Real_Test.zip, Unreal_Train.zip, Unreal_Test.zip
+├── LISA.zip                           the Kaggle LISA download
+├── gtsrb/gtsrb_kaggle.zip             the Kaggle GTSRB download
+├── indian/Indian-Traffic-Sign-Classification.zip      the zip file on the Hugging Face page
+├── mapillary/                         from Mapillary, fully annotated part only:
+│   ├── mtsd_v2_fully_annotated_annotation.zip
+│   ├── mtsd_v2_fully_annotated_images.train.0.zip
+│   ├── mtsd_v2_fully_annotated_images.train.1.zip
+│   ├── mtsd_v2_fully_annotated_images.train.2.zip
+│   └── mtsd_v2_fully_annotated_images.val.zip
+└── damaged/
+    ├── damaged-signs-dataset.zip      the Kaggle Damaged Signs download
+    └── Detection_of_damage_signs.v3i.yolov8.zip       Roboflow v3, exported in YOLOv8 format
+```
+
+Then run the preparation scripts in `scripts/` and the training in `experiments/`, in the order given in
+[documents/workflow.md](documents/workflow.md). The Mapillary test images aren't needed, because their labels
+are not public. Mapillary's validation photos are used as the test set instead.
 
 ## Run the app
 
