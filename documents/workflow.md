@@ -1,7 +1,7 @@
 # Project Workflow
 
-How the project works, how to run it, and what's left.
-Last updated: 4 November 2026.
+How the project works, how to run it, and where it stands.
+Last updated: 13 November 2026. The project is finished: training, testing, the app, the report, the slides and the demo are done.
 
 ## What the app does
 
@@ -32,7 +32,7 @@ Upload a cropped sign or light, or a full photo where YOLO
 
 | Step | Status |
 |---|---|
-| 1. Faculty approval and report rules | Approval received, report rules **waiting on you** |
+| 1. Faculty approval | Approval received to submit one project to all three courses |
 | 2. Project setup, GPU check and datasets | Done |
 | 3. Image processing | Done, 43 checks pass |
 | 4. Fuzzy controller | Done, 36 checks pass |
@@ -41,12 +41,15 @@ Upload a cropped sign or light, or a full photo where YOLO
 | 6. Streamlit app | Done, 75 checks pass |
 | 7. Add LISA traffic lights | Done, 17 classes |
 | 8. Final experiments on 3 seeds, using the test set once | Done, results in `results/final/` |
-| 9. Try the app on real phone photos | 11 web street photos tested, phone photos in bad conditions **waiting on you** |
+| 9. Try the app on real photos | Done on 11 web street photos and a phone test; the phone test found the worn-sign gap fixed in step 13 |
 | 10. Wide 84-class CNN with GTSRB and an Indian set | Done, scored once on the test sets |
 | 11. Global 106-class CNN with Mapillary | Done, scored once on the test sets, the app's default model |
 | 12. YOLO detector for full photos | Done, scored once on the test sets, keeps boxes at 30% confidence or more |
 | 13. Worn and damaged signs: worn-paint copies, Kaggle and Roboflow photos | Done, scored once on the test sets, the app's default CNN and detector |
-| 14. Three reports and demo preparation | Not started |
+| 14. Move to PyTorch 2.5.1 after Windows blocked PyTorch 2.15 | Done, every model loads unchanged and all 262 checks pass (decision 34) |
+| 15. Report, slides and speech | Done: a 25-page report, 8 slides and a presentation speech in `documents/report/` |
+| 16. Demo | Done on 12 November |
+| 17. Publish on GitHub | Done, with the datasets left out |
 
 ## Folder structure
 
@@ -55,8 +58,8 @@ mini_project/
 ├── app.py                    Streamlit app
 ├── assets/                   sample signs for the demo
 ├── .streamlit/               app theme
-├── data/
-│   ├── raw/                  CURE-TSR.zip, LISA.zip, GTSRB, the Indian set and Mapillary
+├── data/                     not in the GitHub repository (about 150 GB); see README.md for the download links
+│   ├── raw/                  CURE-TSR.zip, LISA.zip, GTSRB, the Indian set, Mapillary and the damaged-sign sets
 │   ├── processed/            packed images, features and metadata
 │   └── detection/            full frames and boxes for YOLO
 ├── deep_learning/
@@ -70,7 +73,8 @@ mini_project/
 │   ├── detector.py           YOLO finds signs and lights in full photos
 │   └── train_detector.py     YOLO training
 ├── documents/                decisions and workflow
-├── experiments/              36 training runs, final scoring, studies and charts
+│   └── report/               report, slides and speech, with the scripts that build them
+├── experiments/              training runs, test scoring, studies and charts
 ├── fuzzy_logic/
 │   ├── membership.py         fuzzy sets
 │   ├── rules.py              14 rules
@@ -85,7 +89,8 @@ mini_project/
 │   └── photos.py             uploaded photo loading and cropping
 ├── models/                   trained checkpoints
 ├── results/                  charts, CSV files and training logs
-├── scripts/                  setup, checks, demos and comparisons
+├── scripts/                  setup, data preparation, checks, demos and comparisons
+├── README.md                 project summary for GitHub
 └── requirements.txt
 ```
 
@@ -359,6 +364,48 @@ The new CNN and detector get new names, so the finished models stay as they are.
 .venv\Scripts\python.exe -m experiments.detector_scores --split val --weights models\detector_wear.pt
 ```
 
+**Rebuild the report, slides and speech**
+
+These need a Python with python-docx, pymupdf and python-pptx, Node.js with pptxgenjs, and Microsoft Word and PowerPoint for the PDFs. The diagrams use the project's `.venv`.
+
+```bash
+.venv\Scripts\python.exe documents\report\make_diagrams.py
+```
+
+```bash
+python documents\report\build_report.py
+```
+
+```bash
+powershell -ExecutionPolicy Bypass -File documents\report\to_pdf.ps1 documents\report\Traffic_Sign_Recognition_Report.docx
+```
+
+`build_deck.js` also applies the theme colours when `PPTX_SKILL` points to a folder holding `scripts\apply_theme.js`. `slides_to_png.ps1` saves the slides' PDF and a picture of each slide.
+
+```bash
+node documents\report\build_deck.js
+```
+
+```bash
+powershell -ExecutionPolicy Bypass -File documents\report\slides_to_png.ps1 documents\report\Traffic_Sign_Recognition_Presentation.pptx slides
+```
+
+The speech takes its slide pictures from the slides' PDF, so build it last.
+
+```bash
+python documents\report\build_speech.py
+```
+
+```bash
+powershell -ExecutionPolicy Bypass -File documents\report\to_pdf.ps1 documents\report\Presentation_Speech.docx
+```
+
+`check_numbers.py` checks that the report and slides quote the numbers in `results/final/` correctly.
+
+```bash
+python documents\report\check_numbers.py
+```
+
 ## Rules to follow
 
 - Use the real test set only for final results.
@@ -371,14 +418,16 @@ The new CNN and detector get new names, so the finished models stay as they are.
 - Only write real measured results in the reports.
 - Ask before installing anything new.
 - Keep the laptop plugged in and awake during long training. When Windows sleeps, training pauses until it wakes.
-- Windows Smart App Control is on and may block new, little-used library files. pandas 3.1.0 was blocked on 4 November, and pandas 2.2.3 works.
+- Windows Smart App Control is on and may block new, little-used library files. It blocked pandas 3.1.0 on 4 November (pandas 2.2.3 works) and PyTorch 2.15 on 11 November (PyTorch 2.5.1 works, decision 34).
+- On 12 November it also blocked scikit-image's HOG file. The app never uses HOG, so `image_processing/features.py` now loads it only when HOG features are computed. On this laptop, HOG features fail until an older scikit-image is installed, which only matters for the feature MLP.
 
-## Time left
+## Possible next steps
 
-These are rough estimates at a few hours a day.
+None of these are needed for the submission.
 
-| Work | Estimate |
+| Work | Why |
 |---|---|
-| Real photo test | 1-2 hours |
-| Demo preparation | A few hours |
-| Three reports | 1-2 days |
+| Test phone photos taken at night and in rain | real night and rain photos haven't been tried yet |
+| A larger input or a pretrained backbone | 32 x 32 images cannot show the text and numbers on signs |
+| Stronger sun-bleaching in the worn-paint copies | the most faded real stop sign is still misread |
+| Separate course reports | only if a course asks for its own format; the one report covers all three |
