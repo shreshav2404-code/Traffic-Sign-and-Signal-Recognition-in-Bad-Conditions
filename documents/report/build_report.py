@@ -321,9 +321,7 @@ def cover(doc):
     paragraph = doc.add_paragraph()
     paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
     paragraph.add_run().add_picture(str(FIG / "fig_pipeline.png"), width=Cm(15.5))
-    paragraph.paragraph_format.space_after = Pt(24)
-    para(doc, "One project submitted to three courses", after=4, align=WD_ALIGN_PARAGRAPH.CENTER, size=11, colour=NAVY)
-    para(doc, "**Deep Learning  ·  Image Processing and Analysis  ·  Neural Networks and Fuzzy Logic**", after=30, align=WD_ALIGN_PARAGRAPH.CENTER, size=11)
+    paragraph.paragraph_format.space_after = Pt(36)
     grid = doc.add_table(rows=3, cols=2)
     grid.alignment = WD_TABLE_ALIGNMENT.CENTER
     no_borders(grid)
