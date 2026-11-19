@@ -1,4 +1,5 @@
-// Build the 8-slide project presentation. Run with pptxgenjs on NODE_PATH:
+// Build the 8-slide project presentation, ordered by the three points the teacher asked for:
+// 1 why this topic, 2 algorithms used, 3 implementation. Run with pptxgenjs on NODE_PATH:
 //   node documents/report/build_deck.js
 // Every number comes from the report (build_report.py), which takes them from results/.
 const path = require("path");
@@ -116,8 +117,12 @@ pres.addSection({ title: "Introduction" });
 let slide = pres.addSlide({ masterName: "TITLE_DARK", sectionTitle: "Introduction" });
 slide.addText("Traffic Sign and Signal Recognition in Bad Conditions", { placeholder: "title" });
 slide.addText("Fuzzy-logic image enhancement, neural network classification and YOLO detection", { placeholder: "body" });
-slide.addText("One project for Deep Learning · Image Processing and Analysis · Neural Networks and Fuzzy Logic", {
-  x: 0.7, y: 3.45, w: 11.9, h: 0.45, fontSize: 16, color: HEX.lt1, margin: 0, isTextBox: true,
+// Agenda: the three points the presentation must cover
+[["1", "Why this topic"], ["2", "Algorithms used"], ["3", "Implementation"]].forEach(([n, label], i) => {
+  slide.addText([
+    { text: `${n}  `, options: { bold: true, color: HEX.accent1 } },
+    { text: label, options: { color: HEX.lt1 } },
+  ], { shape: pres.shapes.ROUNDED_RECTANGLE, x: 0.7 + i * 3.55, y: 3.4, w: 3.3, h: 0.55, rectRadius: 0.1, fill: { color: "2C4F7C" }, line: { color: "4A6A93", width: 1 }, fontSize: 17, align: "center", valign: "middle", margin: 0, isTextBox: true, objectName: `Agenda ${n}` });
 });
 stat(slide, 0.7, 4.45, 2.9, "0.819", "macro F1 on 203,374 real damaged test signs", true);
 stat(slide, 3.75, 4.45, 2.9, "97.9%", "accuracy on 281,547 traffic-light test images", true);
@@ -128,18 +133,23 @@ slide.addText("Presented by: Keshav Kumar (20241CAI0072)     Department: PSAIAC"
 });
 slide.addNotes("One pipeline reads traffic signs and lights from damaged images. Fuzzy logic decides how to repair each image, and neural networks name the sign. Every score is the mean of 3 training runs, tested once.");
 
-// 2. Problem and objectives
-pres.addSection({ title: "Problem and solution" });
-slide = pres.addSlide({ masterName: "CONTENT", sectionTitle: "Problem and solution" });
-slide.addText("Signs must be read in the conditions where vision fails", { placeholder: "title" });
-slide.addText("Problem statement", { x: 0.6, y: 1.25, w: 5.8, h: 0.4, fontSize: 20, bold: true, color: C.text2, margin: 0, isTextBox: true });
+// 2. Point 1: why this topic, and the objectives
+pres.addSection({ title: "1 Why this topic" });
+slide = pres.addSlide({ masterName: "CONTENT", sectionTitle: "1 Why this topic" });
+slide.addText("1 · Why this topic: reading signs where vision fails", { placeholder: "title" });
+slide.addText("Why we chose it", { x: 0.6, y: 1.25, w: 5.8, h: 0.4, fontSize: 20, bold: true, color: C.text2, margin: 0, isTextBox: true });
 slide.addText([
-  { text: "Night, haze, rain, snow, noise, blur and worn paint damage the image a driver-assistance camera sees.", options: { bullet: true, breakLine: true } },
-  { text: "A CNN trained on clean images reads only 0.683 macro F1 on real damaged signs, against 0.819 when trained on damage.", options: { bullet: true, breakLine: true } },
-  { text: "Can image processing, steered by fuzzy logic, repair images enough to help, and how does that compare with training on damage?", options: { bullet: true } },
-], { x: 0.6, y: 1.7, w: 5.8, h: 2.3, fontSize: 15, color: HEX.dk1, paraSpaceAfter: 6, valign: "top", margin: 0, isTextBox: true });
-slide.addImage({ path: path.join(FIG, "cure_samples.png"), x: 0.75, y: 4.15, w: 3.5, h: 3.5 / 1.284, altText: "CURE-TSR signs: clean, then darkening, noise and haze at levels 3 and 5" });
-slide.addText("CURE-TSR signs: clean, then darkening, noise and haze at levels 3 and 5", { x: 4.35, y: 5.3, w: 2.1, h: 1.2, fontSize: 11, color: MUTED, italic: true, margin: 0, valign: "top", isTextBox: true });
+  { text: "Safety: ", options: { bold: true, bullet: true } },
+  { text: "a driver-assistance camera must read signs at night, in haze, rain and snow, and on worn paint, exactly when vision is worst.", options: { breakLine: true } },
+  { text: "A real gap: ", options: { bold: true, bullet: true } },
+  { text: "a CNN trained on clean images reads only 0.683 macro F1 on real damaged signs, against 0.819 when trained on damage.", options: { breakLine: true } },
+  { text: "Real roads: ", options: { bold: true, bullet: true } },
+  { text: "our own phone test found a faded stop sign that no model could read.", options: { breakLine: true } },
+  { text: "Three courses, one topic: ", options: { bold: true, bullet: true } },
+  { text: "image processing repairs, fuzzy logic decides how much, neural networks read the sign.", options: {} },
+], { x: 0.6, y: 1.7, w: 5.8, h: 2.75, fontSize: 14, color: HEX.dk1, paraSpaceAfter: 5, valign: "top", margin: 0, isTextBox: true });
+slide.addImage({ path: path.join(FIG, "cure_samples.png"), x: 0.75, y: 4.55, w: 3.0, h: 3.0 / 1.284, altText: "CURE-TSR signs: clean, then darkening, noise and haze at levels 3 and 5" });
+slide.addText("CURE-TSR signs: clean, then darkening, noise and haze at levels 3 and 5", { x: 3.95, y: 5.3, w: 2.45, h: 1.2, fontSize: 11, color: MUTED, italic: true, margin: 0, valign: "top", isTextBox: true });
 slide.addText("Objectives", { x: 6.9, y: 1.25, w: 5.8, h: 0.4, fontSize: 20, bold: true, color: C.text2, margin: 0, isTextBox: true });
 const objectives = [
   ["image", "1", "Image processing", "filters, histograms, convolution, measured with PSNR and SSIM"],
@@ -156,11 +166,48 @@ objectives.forEach(([kind, n, head, text], i) => {
     { text, options: { fontSize: 13, color: MUTED } },
   ], { x: 7.6, y, w: 5.1, h: 0.85, valign: "middle", margin: 0, isTextBox: true });
 });
-slide.addNotes("The three courses map onto the objectives: image processing (1), fuzzy logic and neural networks (2, 3), and deep learning (4). Objective 5 makes the work usable and the results trustworthy.");
+slide.addNotes("Why this topic: it is a safety problem, there is a measured gap between clean-trained and damage-trained models, real roads have worn signs, and it needs all three courses. The objectives map onto the courses: image processing (1), fuzzy logic and neural networks (2, 3), and deep learning (4).");
 
-// 3. Solution workflow, drawn as native shapes
-slide = pres.addSlide({ masterName: "CONTENT", sectionTitle: "Problem and solution" });
-slide.addText("Solution: measure, enhance with fuzzy logic, then classify", { placeholder: "title" });
+// 3. Point 2: the algorithm used at each step
+pres.addSection({ title: "2 Algorithms used" });
+slide = pres.addSlide({ masterName: "CONTENT", sectionTitle: "2 Algorithms used" });
+slide.addText("2 · Algorithms used, step by step", { placeholder: "title" });
+const algorithms = [
+  ["app", "Find", "YOLO26n detector, pretrained on COCO, fine-tuned twice on our frames", "Deep learning", "mAP50 0.701 on signs, 0.893 on damaged close-ups"],
+  ["image", "Measure", "Mean brightness, RMS contrast, colour-roughness noise", "Image processing", "3 numbers describe the damage"],
+  ["fuzzy", "Decide", "Mamdani fuzzy inference: 14 rules, min for AND, max to combine, centroid defuzzification", "Fuzzy logic", "matches scikit-fuzzy within 0.0001"],
+  ["image", "Repair", "Gaussian filter → RGB levels stretch → gamma correction", "Image processing", "clean-trained CNN 0.683 → 0.715"],
+  ["neural", "Classify", "CNN: 6 conv layers, batch norm, dropout; AdamW, weighted cross-entropy, early stopping", "Deep learning", "0.819 macro F1, 89.8% accuracy"],
+  ["neural", "Compare", "MLP on pixels, MLP on HOG + colour features, NumPy MLP with backpropagation by hand", "Neural networks", "gradient error 5.2 × 10⁻⁷"],
+];
+const algoRows = [["Step", "Algorithm", "Course", "Result"].map((text) => ({ text, options: { bold: true, color: HEX.lt1, fill: { color: HEX.dk2 }, fontSize: 14 } }))];
+algorithms.forEach(([kind, step, algorithm, course, result]) => {
+  algoRows.push([
+    { text: step, options: { bold: true, fontSize: 15, color: HEX.dk1, fill: { color: TINT[kind] } } },
+    { text: algorithm, options: { fontSize: 13.5, color: HEX.dk1, fill: { color: "FFFFFF" } } },
+    { text: course, options: { fontSize: 13, color: EDGE[kind], bold: true, fill: { color: "FFFFFF" } } },
+    { text: result, options: { fontSize: 13, color: MUTED, fill: { color: "FFFFFF" } } },
+  ]);
+});
+slide.addTable(algoRows, { x: 0.6, y: 1.25, w: 9.1, colW: [1.1, 4.1, 1.6, 2.3], border: { type: "solid", pt: 0.75, color: "B7C1CA" }, valign: "middle", margin: 0.08 });
+slide.addText([
+  { text: "Also built and compared: ", options: { bold: true, color: HEX.dk1 } },
+  { text: "histogram equalization, CLAHE, convolution by hand (equal to OpenCV), Sobel and Laplacian edges, and mean, median, bilateral and non-local means filters (median: 22.16 → 34.83 dB on 2% salt-and-pepper).", options: { color: MUTED } },
+], { x: 0.6, y: 6.15, w: 9.1, h: 0.8, fontSize: 12.5, margin: 0, valign: "top", isTextBox: true });
+slide.addText([
+  { text: "IF ", options: { bold: true, color: EDGE.fuzzy } }, { text: "brightness is bright", options: { breakLine: true } },
+  { text: "AND ", options: { bold: true, color: EDGE.fuzzy } }, { text: "contrast is medium", options: { breakLine: true } },
+  { text: "THEN ", options: { bold: true, color: EDGE.fuzzy } }, { text: "darken is strong", options: {} },
+], { shape: pres.shapes.ROUNDED_RECTANGLE, x: 9.95, y: 1.25, w: 2.8, h: 1.3, rectRadius: 0.1, fill: { color: TINT.fuzzy }, line: { color: EDGE.fuzzy, width: 1.25 }, fontSize: 14, color: HEX.dk1, margin: 8, valign: "middle", isTextBox: true, objectName: "Example rule" });
+slide.addText("one of the 14 fuzzy rules", { x: 9.95, y: 2.6, w: 2.8, h: 0.3, fontSize: 11, italic: true, color: MUTED, margin: 0, isTextBox: true });
+slide.addImage({ path: path.join(FIG, "fuzzy_before_after.png"), x: 10.25, y: 3.05, w: 2.6 * 0.839, h: 2.6, altText: "Darkened and hazy signs before and after fuzzy enhancement" });
+slide.addText("Darkening and haze: damaged (top), after fuzzy repair (bottom)", { x: 9.95, y: 5.75, w: 2.8, h: 0.6, fontSize: 11, italic: true, color: MUTED, margin: 0, valign: "top", isTextBox: true });
+slide.addNotes("Each step of the pipeline uses a named algorithm. YOLO finds signs, three image measures describe the damage, Mamdani fuzzy inference picks the repair strengths, a Gaussian filter, levels stretch and gamma correction repair the image, and the CNN names the sign. The MLPs are the neural-network baselines, including one with backpropagation written by hand.");
+
+// 4. Point 3: implementation, the workflow drawn as native shapes
+pres.addSection({ title: "3 Implementation" });
+slide = pres.addSlide({ masterName: "CONTENT", sectionTitle: "3 Implementation" });
+slide.addText("3 · Implementation: one photo, eight steps", { placeholder: "title" });
 const bw = 2.75, bh = 1.5, gap = (W - 1.2 - 4 * bw) / 3;
 const xs = [0, 1, 2, 3].map((i) => 0.6 + i * (bw + gap));
 const top = 1.45, bottom = 3.85;
@@ -191,10 +238,9 @@ slide.addText("Denoising goes first, because stretching would amplify leftover n
 });
 slide.addNotes("Walk through one photo: YOLO finds the sign, the crop is measured, the fuzzy controller sets three strengths, the image is enhanced in a fixed order, and the CNN classifies both the original and the enhanced crop so the app can show whether enhancement changed the answer.");
 
-// 4. Architecture and technology stack
-pres.addSection({ title: "Design and data" });
-slide = pres.addSlide({ masterName: "CONTENT", sectionTitle: "Design and data" });
-slide.addText("Architecture: four layers, from datasets to the app", { placeholder: "title" });
+// 5. Implementation: architecture and technology stack
+slide = pres.addSlide({ masterName: "CONTENT", sectionTitle: "3 Implementation" });
+slide.addText("3 · Implementation: four-layer architecture and tools", { placeholder: "title" });
 const layers = [
   ["Data sources", [["data", "CURE-TSR + LISA", ["2.2 M signs", "41,923 lights"]], ["data", "GTSRB + Indian", ["real sign photos", "43 + 85 classes"]], ["data", "Mapillary", ["40,968 photos", "six continents"]], ["data", "Kaggle + Roboflow", ["5,190 photos", "of damaged signs"]]]],
   ["Preparation", [["data", "Pack arrays", ["32 × 32 × 3", "merged labels"]], ["image", "Add damage", ["5 types × 5 levels", "incl. worn paint"]], ["data", "Leak-free splits", ["clip, track, block", "+ validation gap"]], ["fuzzy", "Enhanced copies", ["fuzzy controller", "on every image"]]]],
@@ -220,9 +266,9 @@ slide.addTable(tableRows(["Layer", "Tools"], [
 slide.addText("All 262 automated checks pass.", { x: 8.9, y: 5.75, w: 3.85, h: 0.45, fontSize: 14, bold: true, color: HEX.accent4, margin: 0, isTextBox: true });
 slide.addNotes("image_processing, fuzzy_logic and deep_learning hold the methods; experiments runs training and scoring; app.py is the interface. Datasets are packed once into 32 x 32 arrays, which made training on 1.9 million images possible on a laptop GPU.");
 
-// 5. Datasets and training
-slide = pres.addSlide({ masterName: "CONTENT", sectionTitle: "Design and data" });
-slide.addText("7 datasets, 51 classifier runs, every test set scored once", { placeholder: "title" });
+// 6. Implementation: datasets and training
+slide = pres.addSlide({ masterName: "CONTENT", sectionTitle: "3 Implementation" });
+slide.addText("3 · Implementation: 7 datasets, 51 training runs", { placeholder: "title" });
 slide.addTable(tableRows(["Dataset", "What it adds", "Images used"], [
   ["CURE-TSR", "14 signs, 12 damages × 5 levels", "2,206,100"],
   ["LISA", "red, yellow, green lights, day and night", "41,923 crops"],
@@ -249,64 +295,9 @@ steps.forEach(([kind, title, lines], i) => {
 });
 slide.addNotes("CURE-TSR is the core because every damaged image has a clean original, so image quality can be measured exactly. The other datasets widen the classes and add real photos and real damage. The protocol at the bottom applies to every model.");
 
-// 6. Methods across the three courses
-pres.addSection({ title: "Methods and results" });
-slide = pres.addSlide({ masterName: "CONTENT", sectionTitle: "Methods and results" });
-slide.addText("Three courses, one pipeline", { placeholder: "title" });
-const cards = [
-  ["image", "Image Processing", "34.83 dB", "median filter on 2% salt-and-pepper (from 22.16)", [
-    "point operations, histogram equalization, CLAHE",
-    "convolution by hand, equal to OpenCV",
-    "new colour-roughness noise measure",
-  ], "image"],
-  ["fuzzy", "Fuzzy Logic", "0.683 → 0.715", "real signs F1, clean-trained CNN with fuzzy input", [
-    "3 inputs, 3 outputs, 3 sets each",
-    "14 Mamdani rules, centroid output",
-    "within 0.0001 of scikit-fuzzy",
-  ], "rule"],
-  ["neural", "Neural Nets and Deep Learning", "5.2 × 10⁻⁷", "worst gradient error of the hand-written MLP", [
-    "MLP, feature MLP, CNN compared",
-    "CNN: 6 conv layers, batch norm, dropout",
-    "17 → 106 classes, YOLO, worn signs",
-  ], "chips"],
-];
-cards.forEach(([kind, title, value, label, bullets, visual], i) => {
-  const x = 0.6 + i * 4.15, w = 3.85;
-  slide.addShape(pres.shapes.ROUNDED_RECTANGLE, { x, y: 1.3, w, h: 5.45, rectRadius: 0.12, fill: { color: TINT[kind] }, line: { color: EDGE[kind], width: 1.5 }, objectName: `${title} card` });
-  slide.addText(title, { x: x + 0.2, y: 1.42, w: w - 0.4, h: 0.45, fontSize: 18, bold: true, color: EDGE[kind], margin: 0, isTextBox: true });
-  slide.addText([
-    { text: value, options: { fontSize: 26, bold: true, color: HEX.dk1, breakLine: true } },
-    { text: label, options: { fontSize: 12, color: MUTED } },
-  ], { x: x + 0.2, y: 1.9, w: w - 0.4, h: 1.05, margin: 0, valign: "top", isTextBox: true });
-  slide.addText(bullets.map((b, j) => ({ text: b, options: { bullet: true, breakLine: j < bullets.length - 1 } })), {
-    x: x + 0.2, y: 3.0, w: w - 0.4, h: 1.45, fontSize: 14, color: HEX.dk1, paraSpaceAfter: 4, margin: 0, valign: "top", isTextBox: true,
-  });
-  if (visual === "image") {
-    slide.addImage({ path: path.join(FIG, "fuzzy_before_after.png"), x: x + 0.2, y: 4.55, w: 2.05 * 0.839, h: 2.05, altText: "Darkened and hazy signs before and after fuzzy enhancement" });
-    slide.addText("Darkening and haze: damaged (top) and after fuzzy enhancement (bottom)", { x: x + 2.05, y: 4.7, w: w - 2.2, h: 1.6, fontSize: 12, italic: true, color: MUTED, margin: 0, valign: "top", isTextBox: true });
-  } else if (visual === "rule") {
-    slide.addText([
-      { text: "IF ", options: { bold: true, color: EDGE.fuzzy } }, { text: "brightness is bright", options: { breakLine: true } },
-      { text: "AND ", options: { bold: true, color: EDGE.fuzzy } }, { text: "contrast is medium", options: { breakLine: true } },
-      { text: "THEN ", options: { bold: true, color: EDGE.fuzzy } }, { text: "darken is strong", options: {} },
-    ], { shape: pres.shapes.ROUNDED_RECTANGLE, x: x + 0.2, y: 4.6, w: w - 0.4, h: 1.35, rectRadius: 0.1, fill: { color: HEX.lt1 }, line: { color: EDGE.fuzzy, width: 1.25 }, fontSize: 15, color: HEX.dk1, margin: 8, valign: "middle", isTextBox: true, objectName: "Example rule" });
-    slide.addText("one of 14 rules: min for AND, max to combine, centroid output", { x: x + 0.2, y: 6.05, w: w - 0.4, h: 0.5, fontSize: 12, italic: true, color: MUTED, margin: 0, isTextBox: true });
-  } else {
-    [["816 K", "CNN weights"], ["6", "conv layers"], ["2", "YOLO models"]].forEach(([big, small], j) => {
-      const cw = (w - 0.4 - 0.2) / 3;
-      slide.addText([
-        { text: big, options: { fontSize: 22, bold: true, color: EDGE.neural, breakLine: true } },
-        { text: small, options: { fontSize: 12, color: MUTED } },
-      ], { shape: pres.shapes.ROUNDED_RECTANGLE, x: x + 0.2 + j * (cw + 0.1), y: 4.75, w: cw, h: 1.25, rectRadius: 0.1, fill: { color: HEX.lt1 }, line: { color: EDGE.neural, width: 1.25 }, align: "center", valign: "middle", margin: 2, isTextBox: true, objectName: "Chip " + small });
-    });
-    slide.addText("17 → 84 → 106 classes over 4 stages", { x: x + 0.2, y: 6.1, w: w - 0.4, h: 0.45, fontSize: 12, italic: true, color: MUTED, margin: 0, isTextBox: true });
-  }
-});
-slide.addNotes("Image processing repairs and measures images; fuzzy logic decides how much of each repair to apply; neural networks and deep learning name the sign. The hand-written MLP proves backpropagation is understood, not just used.");
-
-// 7. Results: every headline score
-slide = pres.addSlide({ masterName: "CONTENT", sectionTitle: "Methods and results" });
-slide.addText("Results: training on damage beats repairing it", { placeholder: "title" });
+// 7. Implementation: results, every headline score
+slide = pres.addSlide({ masterName: "CONTENT", sectionTitle: "3 Implementation" });
+slide.addText("3 · Results: training on damage beats repairing it", { placeholder: "title" });
 slide.addTable(tableRows(["Model (test, macro F1)", "Classes", "Real signs", "Simulated", "Lights", "Worn real"], [
   ["Feature MLP, all conditions", "17", "0.701", "0.825", "0.898", "–"],
   ["MLP, all conditions", "17", "0.733", "0.878", "0.960", "–"],
